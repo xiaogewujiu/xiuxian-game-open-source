@@ -1,0 +1,2629 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XXX.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:XXX.WebApi.Controllers.AchievementController">
+            <summary>
+            成就系统接口。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AchievementController.#ctor(XXX.Application.Interfaces.IAchievementService,XXX.Infrastructure.Repositories.IRepository{XXX.Entity.UserEntity},XXX.Infrastructure.Repositories.IRepository{XXX.Entity.AlchemyRecipeEntity},XXX.Infrastructure.Repositories.IRepository{XXX.Entity.ForgeRecipeEntity},XXX.Infrastructure.Repositories.IRepository{XXX.Entity.CropTemplateEntity})">
+            <summary>
+            初始化成就控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AchievementController.GetPlayerId">
+            <summary>
+            从当前登录上下文中读取玩家编号。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AchievementController.GetAchievements">
+            <summary>
+            获取全部成就配置。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AchievementController.GetOverview">
+            <summary>
+            获取玩家视角下的成就总览。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AchievementController.GetMyProgress">
+            <summary>
+            获取当前玩家的成就进度明细。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AchievementController.GetStats">
+            <summary>
+            获取成就统计信息。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AchievementController.ClaimReward(System.String)">
+            <summary>
+            领取指定成就的奖励。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AchievementController.MapAchievementToDto(XXX.Achievement.AchievementConfig,XXX.Achievement.AchievementProgress,XXX.WebApi.Controllers.AchievementController.AchievementDisplayLookup)">
+            <summary>
+            将成就配置和玩家进度映射成前端总览 DTO。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AchievementController.MapRewards(XXX.Achievement.AchievementReward,XXX.WebApi.Controllers.AchievementController.AchievementDisplayLookup)">
+            <summary>
+            将成就奖励映射成统一展示结构。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminArenaController.GetOverview">
+            <summary>
+            获取竞技场总览。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminArenaController.GetPlayers(System.String,System.Int32)">
+            <summary>
+            获取竞技场玩家列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminArenaController.GetLogs(System.String,System.Int32)">
+            <summary>
+            获取对战日志。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminArenaController.AdjustPoints(XXX.Application.DTOs.AdminAdjustPointsDto)">
+            <summary>
+            调整玩家积分。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminArenaController.BanPlayer(XXX.Application.DTOs.AdminBanPlayerDto)">
+            <summary>
+            禁赛玩家。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminArenaController.UnbanPlayer(XXX.Application.DTOs.AdminUnbanPlayerDto)">
+            <summary>
+            解禁玩家。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminArenaController.GetSeasonInfo">
+            <summary>
+            获取赛季信息。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminArenaController.SettleSeason">
+            <summary>
+            手动结算赛季（发放奖励并开始新赛季）。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminArenaController.ResetSeason">
+            <summary>
+            重置赛季（清空所有玩家数据，从赛季1开始）。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminArenaController.AdjustSeason(XXX.Application.DTOs.AdminAdjustSeasonDto)">
+            <summary>
+            调整赛季配置（时长/开关）。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminArenaController.GetSeasonRewards">
+            <summary>
+            获取赛季奖励列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminArenaController.SaveSeasonReward(XXX.Application.DTOs.AdminSaveSeasonRewardDto)">
+            <summary>
+            保存赛季奖励（新增或更新）。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminArenaController.DeleteSeasonReward(System.String)">
+            <summary>
+            删除赛季奖励。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.Admin.AdminFavorabilityController">
+            <summary>
+            好感度后台管理控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminFavorabilityController.GetRelations(System.String,System.Int32,System.Int32)">
+            <summary>
+            获取好感度关系列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminFavorabilityController.UpdateRelation(System.Int64,XXX.Application.DTOs.AdminFavorabilityUpdateRequest)">
+            <summary>
+            修改好感度数值。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminFavorabilityController.DeleteRelation(System.Int64)">
+            <summary>
+            删除好感度关系。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminFavorabilityController.GetGiftLog(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取赠送记录。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminFavorabilityController.GetStats">
+            <summary>
+            获取好感度统计。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminFavorabilityController.GetLevels">
+            <summary>
+            获取好感度等级配置。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminFavorabilityController.SaveLevel(XXX.Application.DTOs.FavorabilityLevelDto)">
+            <summary>
+            保存好感度等级配置。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminFavorabilityController.DeleteLevel(System.Int32)">
+            <summary>
+            删除好感度等级配置。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminFavorabilityController.GetLeaderboard(System.Int32)">
+            <summary>
+            获取好感度排行榜。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminFavorabilityController.GetDeepFriendship(System.Int32)">
+            <summary>
+            获取深度友谊排行榜。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.Admin.AdminFeedbackController">
+            <summary>
+            管理后台建议反馈控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminFeedbackController.#ctor(XXX.Application.Interfaces.IFeedbackService)">
+            <summary>初始化后台反馈控制器。</summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminFeedbackController.GetList(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>分页查询反馈列表。</summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminFeedbackController.GetDetail(System.Int64)">
+            <summary>获取反馈详情。</summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminFeedbackController.Process(System.Int64,XXX.Application.DTOs.ProcessFeedbackRequestDto)">
+            <summary>处理反馈并记录状态历史。</summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.Admin.AdminMailController">
+            <summary>
+            管理后台邮件控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminMailController.GetList(System.String,System.Nullable{System.Boolean},System.Int32)">
+            <summary>
+            获取邮件列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminMailController.GetDetail(System.Int64)">
+            <summary>
+            获取邮件详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminMailController.SendMail(XXX.Application.DTOs.AdminSendMailDto)">
+            <summary>
+            发送邮件。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminMailController.DeleteMail(System.Int64)">
+            <summary>
+            删除邮件。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminMailController.RecallGlobalMail(System.Int64)">
+            <summary>
+            撤回全服邮件。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.Admin.AdminSectController">
+            <summary>
+            后台宗门管理控制器。
+            提供宗门模板、心法、Boss、排期、商店、福利和公会的后台管理入口。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.#ctor(XXX.Application.Interfaces.IAdminSectService)">
+            <summary>
+            初始化后台宗门管理控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.GetSectTemplates">
+            <summary>
+            获取宗门模板列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.GetSectTemplate(System.String)">
+            <summary>
+            获取宗门模板详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.SaveSectTemplate(XXX.Application.DTOs.AdminSectTemplateDetailDto)">
+            <summary>
+            保存宗门模板。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.DeleteSectTemplate(System.String)">
+            <summary>
+            删除宗门模板。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.GetHeartSutras(System.String)">
+            <summary>
+            获取心法模板列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.GetHeartSutra(System.String)">
+            <summary>
+            获取心法模板详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.SaveHeartSutra(XXX.Application.DTOs.AdminHeartSutraDetailDto)">
+            <summary>
+            保存心法模板。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.DeleteHeartSutra(System.String)">
+            <summary>
+            删除心法模板。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.GetSectBossTemplates">
+            <summary>
+            获取宗门Boss模板列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.GetSectBossTemplate(System.String)">
+            <summary>
+            获取宗门Boss模板详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.SaveSectBossTemplate(XXX.Application.DTOs.AdminSectBossTemplateDetailDto)">
+            <summary>
+            保存宗门Boss模板。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.DeleteSectBossTemplate(System.String)">
+            <summary>
+            删除宗门Boss模板。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.GetSectTournamentSchedule">
+            <summary>
+            获取宗门大比排期配置。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.SaveSectTournamentSchedule(XXX.Application.DTOs.AdminSectTournamentScheduleDto)">
+            <summary>
+            保存宗门大比排期配置。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.GetSectShopItems">
+            <summary>
+            获取宗门商店商品列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.GetSectShopItem(System.String)">
+            <summary>
+            获取宗门商店商品详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.SaveSectShopItem(XXX.Application.DTOs.AdminSectShopItemDetailDto)">
+            <summary>
+            保存宗门商店商品。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.DeleteSectShopItem(System.String)">
+            <summary>
+            删除宗门商店商品。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.GetSectBlessings">
+            <summary>
+            获取宗门福利列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.GetSectBlessing(System.String)">
+            <summary>
+            获取宗门福利详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.SaveSectBlessing(XXX.Application.DTOs.AdminSectBlessingDetailDto)">
+            <summary>
+            保存宗门福利。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.DeleteSectBlessing(System.String)">
+            <summary>
+            删除宗门福利。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.GetGuilds">
+            <summary>
+            获取公会列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminSectController.GetGuild(System.String)">
+            <summary>
+            获取公会详情。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.Admin.AdminTitleController">
+            <summary>
+            管理后台称号控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminTitleController.GetList(System.String,System.Int32)">
+            <summary>
+            获取称号模板列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminTitleController.GetDetail(System.Int64)">
+            <summary>
+            获取称号模板详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminTitleController.Create(XXX.Application.DTOs.AdminTitleDetailDto)">
+            <summary>
+            创建称号模板。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminTitleController.Update(System.Int64,XXX.Application.DTOs.AdminTitleDetailDto)">
+            <summary>
+            更新称号模板。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminTitleController.Delete(System.Int64)">
+            <summary>
+            删除称号模板。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminTitleController.GrantTitle(XXX.Application.DTOs.AdminGrantTitleDto)">
+            <summary>
+            授予玩家称号。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminTitleController.RevokeTitle(XXX.Application.DTOs.AdminGrantTitleDto)">
+            <summary>
+            回收玩家称号。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.Admin.AdminUsersController">
+            <summary>
+            管理后台用户控制器。
+            提供管理员账号的查询、创建、更新和密码重置能力。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminUsersController.#ctor(XXX.Application.Interfaces.IAdminUserService)">
+            <summary>
+            初始化后台用户控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminUsersController.GetList(System.String,System.Nullable{System.Boolean})">
+            <summary>
+            获取管理员列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminUsersController.GetDetail(System.String)">
+            <summary>
+            获取管理员详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminUsersController.Create(XXX.Application.DTOs.AdminCreateUserRequestDto)">
+            <summary>
+            创建管理员。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminUsersController.Update(System.String,XXX.Application.DTOs.AdminUpdateUserRequestDto)">
+            <summary>
+            更新管理员。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AdminUsersController.ResetPassword(System.String,XXX.Application.DTOs.AdminResetPasswordRequestDto)">
+            <summary>
+            重置管理员密码。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.Admin.AuditLogsController">
+            <summary>
+            管理后台审计日志控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AuditLogsController.#ctor(XXX.Application.Interfaces.IAdminAuditService)">
+            <summary>
+            初始化审计日志控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AuditLogsController.GetList(System.String,System.Int32,System.Nullable{System.Boolean})">
+            <summary>
+            获取审计日志列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AuditLogsController.GetDetail(System.String)">
+            <summary>
+            获取单条审计日志详情。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.Admin.AuthController">
+            <summary>
+            管理后台认证控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AuthController.#ctor(XXX.Application.Interfaces.IAdminAuthService,Microsoft.Extensions.Logging.ILogger{XXX.WebApi.Controllers.Admin.AuthController})">
+            <summary>
+            初始化管理后台认证控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AuthController.Login(XXX.Application.DTOs.AdminLoginRequestDto)">
+            <summary>
+            管理员登录。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AuthController.RefreshToken(XXX.Application.DTOs.RefreshTokenRequestDto)">
+            <summary>
+            刷新管理员访问令牌。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AuthController.Me">
+            <summary>
+            获取当前登录管理员信息。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.AuthController.Logout(XXX.Application.DTOs.RefreshTokenRequestDto)">
+            <summary>
+            管理员登出。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.Admin.DashboardController">
+            <summary>
+            管理后台首页控制器。
+            当前先提供最小可用摘要数据，后续再扩展更多运营统计。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.DashboardController.#ctor(XXX.Application.Interfaces.IAdminDashboardService)">
+            <summary>
+            初始化管理后台首页控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.DashboardController.GetSummary">
+            <summary>
+            获取管理后台首页摘要。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.Admin.FiveElementsController">
+            <summary>
+            管理后台聚灵阵控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.FiveElementsController.#ctor(XXX.Application.Interfaces.IAdminFiveElementService)">
+            <summary>
+            初始化聚灵阵控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.FiveElementsController.GetList(System.String)">
+            <summary>
+            获取聚灵阵列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.FiveElementsController.GetDetail(System.String)">
+            <summary>
+            获取聚灵阵详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.FiveElementsController.Save(XXX.Application.DTOs.AdminFiveElementDetailDto)">
+            <summary>
+            保存聚灵阵数据。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.Admin.PlayersController">
+            <summary>
+            管理后台玩家控制器。
+            当前提供列表、详情和基础资料维护能力。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.PlayersController.#ctor(XXX.Application.Interfaces.IAdminPlayerService)">
+            <summary>
+            初始化玩家控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.PlayersController.GetList(System.String,System.Nullable{System.Boolean})">
+            <summary>
+            获取玩家列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.PlayersController.GetOfflineBattles(System.String)">
+            <summary>
+            获取当前离线挂机玩家列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.PlayersController.GetDetail(System.String)">
+            <summary>
+            获取玩家详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.PlayersController.Save(XXX.Application.DTOs.AdminPlayerDetailDto)">
+            <summary>
+            保存玩家基础信息。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.PlayersController.GrantCurrency(System.String,XXX.Application.DTOs.AdminGrantCurrencyRequestDto)">
+            <summary>
+            发放玩家货币或经验。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.PlayersController.GrantItem(System.String,XXX.Application.DTOs.AdminGrantItemRequestDto)">
+            <summary>
+            发放玩家道具。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.PlayersController.Ban(System.String,XXX.Application.DTOs.AdminBanPlayerRequestDto)">
+            <summary>
+            封禁玩家。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.PlayersController.Unban(System.String)">
+            <summary>
+            解封玩家。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.PlayersController.StopOfflineBattle(System.String)">
+            <summary>
+            后台强制停止玩家离线挂机。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.Admin.RuntimeConfigsController">
+            <summary>
+            管理后台运行时配置域控制器。
+            第 1 阶段用于查看当前缓存域状态并执行后台刷新。
+            </summary>
+        </member>
+        <member name="F:XXX.WebApi.Controllers.Admin.RuntimeConfigsController._runtimeRefreshService">
+            <summary>
+            运行时配置刷新服务。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.RuntimeConfigsController.#ctor(XXX.Application.Interfaces.IAdminRuntimeRefreshService)">
+            <summary>
+            初始化运行时配置域控制器。
+            </summary>
+            <param name="runtimeRefreshService">运行时配置刷新服务。</param>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.RuntimeConfigsController.GetList">
+            <summary>
+            获取所有已接入运行时域的当前状态。
+            </summary>
+            <returns>运行时域状态列表。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.RuntimeConfigsController.RefreshDomain(System.String)">
+            <summary>
+            刷新指定的运行时配置域。
+            </summary>
+            <param name="domain">运行时域名称。</param>
+            <returns>本次刷新结果。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.RuntimeConfigsController.RefreshAll">
+            <summary>
+            刷新全部已接入的运行时配置域。
+            </summary>
+            <returns>各运行时域的刷新结果集合。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.RuntimeConfigsController.ResolveOperatorName">
+            <summary>
+            解析当前操作人的名称。
+            优先使用后台登录信息，解析不到时回退为 <c>system</c>。
+            </summary>
+            <returns>当前操作人名称。</returns>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.Admin.SpiritFieldsController">
+            <summary>
+            管理后台灵田系统控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.SpiritFieldsController.#ctor(XXX.Application.Interfaces.IAdminSpiritFieldService)">
+            <summary>
+            初始化灵田系统控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.SpiritFieldsController.GetList(System.String)">
+            <summary>
+            获取灵田系统列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.SpiritFieldsController.GetDetail(System.String)">
+            <summary>
+            获取灵田系统详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.SpiritFieldsController.Save(XXX.Application.DTOs.AdminSpiritFieldDetailDto)">
+            <summary>
+            保存灵田系统数据。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.Admin.WorldBossController">
+            <summary>
+            后台世界 Boss 管理控制器。
+            提供模板、排期与运行时实例的配置入口。
+            </summary>
+        </member>
+        <member name="F:XXX.WebApi.Controllers.Admin.WorldBossController._adminWorldBossService">
+            <summary>
+            后台世界 Boss 管理服务。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.WorldBossController.#ctor(XXX.Application.Interfaces.IAdminWorldBossService)">
+            <summary>
+            初始化后台世界 Boss 控制器。
+            </summary>
+            <param name="adminWorldBossService">后台世界 Boss 管理服务。</param>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.WorldBossController.GetTemplates">
+            <summary>
+            获取世界 Boss 模板列表。
+            </summary>
+            <returns>模板列表。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.WorldBossController.GetTemplate(System.String)">
+            <summary>
+            获取指定世界 Boss 模板详情。
+            </summary>
+            <param name="bossId">Boss 模板编号。</param>
+            <returns>模板详情。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.WorldBossController.SaveTemplate(XXX.Application.DTOs.AdminWorldBossTemplateDetailDto)">
+            <summary>
+            保存世界 Boss 模板。
+            </summary>
+            <param name="request">模板详情请求。</param>
+            <returns>保存后的模板详情。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.WorldBossController.DeleteTemplate(System.String)">
+            <summary>
+            删除指定世界 Boss 模板。
+            </summary>
+            <param name="bossId">Boss 模板编号。</param>
+            <returns>删除结果。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.WorldBossController.GetSchedule">
+            <summary>
+            获取世界 Boss 每日排期配置。
+            </summary>
+            <returns>排期配置。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.WorldBossController.SaveSchedule(XXX.Application.DTOs.AdminWorldBossScheduleDto)">
+            <summary>
+            保存世界 Boss 每日排期配置。
+            </summary>
+            <param name="request">排期配置请求。</param>
+            <returns>保存后的排期配置。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.WorldBossController.GetRuntime">
+            <summary>
+            获取世界 Boss 当前运行时总览。
+            </summary>
+            <returns>当前实例、排行与最近日志。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.WorldBossController.Spawn(System.String)">
+            <summary>
+            立即生成一个世界 Boss 实例。
+            </summary>
+            <param name="bossId">指定的 Boss 模板编号；为空时按规则挑选。</param>
+            <returns>生成后的世界 Boss 当前状态。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.Admin.WorldBossController.Close(System.String)">
+            <summary>
+            关闭当前世界 Boss 实例。
+            </summary>
+            <param name="reason">关闭原因。</param>
+            <returns>关闭结果。</returns>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.AlchemyController">
+            <summary>
+            炼丹系统接口。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AlchemyController.#ctor(XXX.Application.Interfaces.IAlchemyService)">
+            <summary>
+            初始化炼丹控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AlchemyController.GetPlayerId">
+            <summary>
+            从当前登录上下文中读取玩家编号。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AlchemyController.GetInfo">
+            <summary>
+            获取当前玩家的炼丹总览。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AlchemyController.GetLearnedRecipes">
+            <summary>
+            获取当前玩家已学习的丹方。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AlchemyController.GetAvailableRecipes">
+            <summary>
+            获取当前玩家已解锁的丹方。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AlchemyController.LearnRecipe(System.String)">
+            <summary>
+            学习指定丹方。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AlchemyController.StartAlchemy(XXX.Application.DTOs.StartAlchemyRequestDto)">
+            <summary>
+            发起炼丹。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AlchemyController.Collect">
+            <summary>
+            领取已完成的炼丹结果。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ArenaController.GetMe">
+            <summary>
+            获取我的竞技场信息。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ArenaController.GetOpponents">
+            <summary>
+            获取推荐对手。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ArenaController.Challenge(XXX.WebApi.Controllers.ChallengeRequest)">
+            <summary>
+            发起挑战。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ArenaController.GetHistory(System.Int32,System.Int32)">
+            <summary>
+            获取对战历史。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ArenaController.BuyAttempts">
+            <summary>
+            购买挑战次数。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ArenaController.GetSeason">
+            <summary>
+            获取赛季信息。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.AuthController">
+            <summary>
+            认证控制器。
+            </summary>
+        </member>
+        <member name="F:XXX.WebApi.Controllers.AuthController._authService">
+            <summary>
+            玩家认证服务。
+            </summary>
+        </member>
+        <member name="F:XXX.WebApi.Controllers.AuthController._logger">
+            <summary>
+            认证控制器日志记录器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AuthController.#ctor(XXX.Application.Interfaces.IAuthService,Microsoft.Extensions.Logging.ILogger{XXX.WebApi.Controllers.AuthController})">
+            <summary>
+            初始化认证控制器。
+            </summary>
+            <param name="authService">玩家认证服务。</param>
+            <param name="logger">日志记录器。</param>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AuthController.Login(XXX.Application.DTOs.LoginRequestDto)">
+            <summary>
+            用户登录。
+            </summary>
+            <param name="request">登录请求。</param>
+            <returns>登录响应，包含访问令牌、刷新令牌和玩家快照。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AuthController.Register(XXX.Application.DTOs.RegisterRequestDto)">
+            <summary>
+            用户注册。
+            </summary>
+            <param name="request">注册请求。</param>
+            <returns>注册完成后的登录响应。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AuthController.RefreshToken(XXX.Application.DTOs.RefreshTokenRequestDto)">
+            <summary>
+            刷新令牌。
+            </summary>
+            <param name="request">刷新令牌请求。</param>
+            <returns>新的登录响应。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AuthController.Logout(XXX.Application.DTOs.RefreshTokenRequestDto)">
+            <summary>
+            用户登出。
+            </summary>
+            <param name="request">可选的刷新令牌请求体。</param>
+            <returns>登出结果。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.AuthController.CheckAccountExists(System.String)">
+            <summary>
+            检查账号是否存在。
+            </summary>
+            <param name="account">待检查账号。</param>
+            <returns>账号存在性结果。</returns>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.BattleController">
+            <summary>
+            战斗控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.BattleController.#ctor(XXX.Application.Interfaces.IBattleService,Microsoft.AspNetCore.SignalR.IHubContext{XXX.WebApi.Hubs.PartyHub})">
+            <summary>
+            初始化战斗控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.BattleController.StartBattle(XXX.Application.DTOs.BattleRequestDto)">
+            <summary>
+            发起一场普通战斗。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.BattleController.GetMaps">
+            <summary>
+            获取普通地图列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.BattleController.GetDungeons">
+            <summary>
+            获取可挑战的副本列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.BattleController.StartOfflineBattle(XXX.Application.DTOs.StartOfflineBattleRequestDto)">
+            <summary>
+            开始单人普通地图离线挂机。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.BattleController.StopOfflineBattle">
+            <summary>
+            停止当前离线挂机并返回汇总。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.BattleController.GetOfflineBattleStatus">
+            <summary>
+            获取当前离线挂机状态。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.BattleController.ChallengeDungeon(System.String)">
+            <summary>
+            发起单人副本挑战。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.BattleController.ChallengeDungeonWithParty(System.String,System.String,XXX.Application.DTOs.PartyDungeonChallengeRequestDto)">
+            <summary>
+            使用临时队伍挑战副本。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.BattleController.GetPartyBattleRecord(System.String)">
+            <summary>
+            按 BattleId 查询组队副本摘要。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.ChatController">
+            <summary>
+            聊天控制器
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ChatController.#ctor(XXX.Application.Interfaces.IChatService)">
+            <summary>
+            初始化聊天控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ChatController.GetHistory(System.String,System.Int32)">
+            <summary>
+            获取历史消息
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ChatController.SendMessage(XXX.Application.DTOs.SendMessageRequestDto)">
+            <summary>
+            发送消息
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.CheckInController">
+            <summary>
+            每日签到控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.CheckInController.#ctor(XXX.Application.Interfaces.ICheckInService)">
+            <summary>
+            初始化签到控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.CheckInController.GetStatus(System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            获取指定月份的签到状态。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.CheckInController.Claim">
+            <summary>
+            领取今日签到奖励。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.CollectionController.GetConfig">
+            <summary>
+            获取图鉴配置（所有系列和图鉴项）。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.CollectionController.GetPlayerCollection">
+            <summary>
+            获取当前玩家的图鉴收集情况。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.CollectionController.GetBonus">
+            <summary>
+            获取当前玩家的图鉴属性加成汇总。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.DungeonInstanceController.DebugSnapshot">
+            <summary>
+            获取调试状态快照（测试用，包含buff详情）。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.DungeonInstanceController.DebugFighterStats">
+            <summary>
+            获取战斗属性调试信息（测试用，显示buff加成后的实际战斗属性）。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.DungeonInstanceController.ForceParty(XXX.WebApi.Controllers.ForcePartyRequestDto)">
+            <summary>
+            强制组队（测试用）。当前玩家为队长。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.DungeonInstanceController.GetPlayerId">
+            <summary>
+            获取玩家ID（测试用）。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.DungeonInstanceController.ForceEvent(XXX.WebApi.Controllers.ForceEventRequestDto)">
+            <summary>
+            强制触发指定事件（测试用）。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.EquipmentController">
+            <summary>
+            装备控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.#ctor(XXX.Application.Interfaces.IEquipmentService,Microsoft.Extensions.Logging.ILogger{XXX.WebApi.Controllers.EquipmentController})">
+            <summary>
+            初始化装备控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.GetAll">
+            <summary>
+            获取玩家全部装备。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.GetEquipped">
+            <summary>
+            获取已穿戴装备。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.GetDetail(System.String)">
+            <summary>
+            获取装备详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.Equip(XXX.Application.DTOs.EquipItemRequestDto)">
+            <summary>
+            穿戴装备。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.Unequip(XXX.Application.DTOs.UnequipItemRequestDto)">
+            <summary>
+            卸下装备。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.Enhance(XXX.Application.DTOs.EnhanceEquipmentRequestDto)">
+            <summary>
+            强化装备。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.Compare(System.String)">
+            <summary>
+            对比装备。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.Sell(System.String)">
+            <summary>
+            出售装备。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.SellBatch(XXX.Application.DTOs.BatchSellEquipmentRequestDto)">
+            <summary>
+            批量出售装备。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.GetEnhanceable">
+            <summary>
+            获取可强化装备列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.GetSuccessRate(System.String)">
+            <summary>
+            获取强化成功率。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.Bind(XXX.Application.DTOs.BindEquipmentRequestDto)">
+            <summary>
+            锁定装备。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.Unlock(XXX.Application.DTOs.BindEquipmentRequestDto)">
+            <summary>
+            解锁装备。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.Donate(System.String)">
+            <summary>
+            捐献装备。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.Reroll(XXX.Application.DTOs.RerollEquipmentRequestDto)">
+            <summary>
+            洗练装备。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.GetRerollPreview(System.String)">
+            <summary>
+            获取装备洗练预览。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.RollReroll(XXX.Application.DTOs.RerollEquipmentRollRequestDto)">
+            <summary>
+            执行装备洗练（生成候选词条）。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.AcceptReroll(XXX.Application.DTOs.RerollEquipmentAcceptRequestDto)">
+            <summary>
+            接受洗练候选结果。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.DiscardReroll(XXX.Application.DTOs.RerollEquipmentDiscardRequestDto)">
+            <summary>
+            丢弃洗练候选结果。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.FavorabilityController">
+            <summary>
+            好感度控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FavorabilityController.Gift(XXX.Application.DTOs.GiftFavorabilityRequest)">
+            <summary>
+            赠送好感度道具。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FavorabilityController.GetList(System.String)">
+            <summary>
+            获取好感度列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FavorabilityController.GetLog(XXX.Application.DTOs.FavorabilityLogQueryRequest)">
+            <summary>
+            获取赠送记录。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FavorabilityController.GetLevels">
+            <summary>
+            获取好感度等级配置。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FavorabilityController.GetLeaderboard(System.Int32)">
+            <summary>
+            获取好感度排行榜。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FavorabilityController.GetDeepFriendship(System.Int32)">
+            <summary>
+            获取深度友谊排行榜。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FavorabilityController.GetAchievements">
+            <summary>
+            获取好感度成就进度。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FavorabilityController.ClaimAchievement(System.String)">
+            <summary>
+            领取好感度成就奖励。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.FeedbackController">
+            <summary>玩家建议反馈控制器。</summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FeedbackController.#ctor(XXX.Application.Interfaces.IFeedbackService,XXX.WebApi.Services.LocalAssetStorageService)">
+            <summary>初始化玩家反馈控制器。</summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FeedbackController.GetList">
+            <summary>获取当前玩家自己的反馈列表。</summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FeedbackController.GetDetail(System.Int64)">
+            <summary>获取当前玩家自己的反馈详情。</summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FeedbackController.Create(XXX.Application.DTOs.CreateFeedbackRequestDto)">
+            <summary>提交玩家反馈。</summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FeedbackController.UploadAttachment(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>上传玩家反馈图片。</summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FeedbackController.DeleteAttachment(XXX.WebApi.Controllers.DeleteFeedbackAttachmentRequest)">
+            <summary>删除当前玩家刚上传的反馈临时图片。</summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.DeleteFeedbackAttachmentRequest">
+            <summary>删除反馈附件请求。</summary>
+        </member>
+        <member name="P:XXX.WebApi.Controllers.DeleteFeedbackAttachmentRequest.RelativePath">
+            <summary>图片相对路径。</summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.FiveElementController">
+            <summary>
+            五行聚灵阵接口。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FiveElementController.#ctor(XXX.Application.Interfaces.IFiveElementService)">
+            <summary>
+            初始化五行聚灵阵控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FiveElementController.GetPlayerId">
+            <summary>
+            从当前登录上下文中读取玩家编号。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FiveElementController.GetInfo">
+            <summary>
+            获取五行阵总览。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FiveElementController.UpgradeArray">
+            <summary>
+            升级聚灵阵主等级。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FiveElementController.UpgradeElement(XXX.Application.DTOs.UpgradeElementRequestDto)">
+            <summary>
+            升级某个五行分支。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FiveElementController.CollectSpiritPower">
+            <summary>
+            收取当前累计灵力。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.FiveElementController.GetProductionRate">
+            <summary>
+            获取当前灵力产出速率。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.ForgeController">
+            <summary>
+            中文注释：
+            锻造控制器。
+            当前只暴露两个最核心接口：
+            1. 获取锻造总览；
+            2. 按图纸执行锻造。
+            这样前端锻造弹窗就能彻底摆脱本地假数据。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ForgeController.#ctor(XXX.Application.Interfaces.IForgeService)">
+            <summary>
+            初始化锻造控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ForgeController.GetOverview">
+            <summary>
+            获取锻造系统总览。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ForgeController.Forge(XXX.Application.DTOs.ForgeEquipmentRequestDto)">
+            <summary>
+            执行一次锻造。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ForgeController.Collect">
+            <summary>
+            领取已完成的锻造结果。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.GuildController">
+            <summary>
+            公会控制器
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.GuildController.#ctor(XXX.Application.Interfaces.IGuildService)">
+            <summary>
+            初始化宗门控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.GuildController.GetGuilds">
+            <summary>
+            获取公会列表
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.GuildController.CreateGuild(XXX.Application.DTOs.CreateGuildRequestDto)">
+            <summary>
+            创建公会
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.GuildController.JoinGuild(System.String)">
+            <summary>
+            加入公会
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.GuildController.LeaveGuild">
+            <summary>
+            退出公会
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.InventoryController">
+            <summary>
+            背包控制器
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.InventoryController.#ctor(XXX.Application.Interfaces.IInventoryService,Microsoft.Extensions.Logging.ILogger{XXX.WebApi.Controllers.InventoryController})">
+            <summary>
+            初始化背包控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.InventoryController.GetInventory">
+            <summary>
+            获取背包物品列表
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.InventoryController.GetItemDetail(System.Int64)">
+            <summary>
+            获取物品详情
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.InventoryController.UseItem(XXX.Application.DTOs.UseItemRequestDto)">
+            <summary>
+            使用物品
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.InventoryController.DiscardItem(XXX.Application.DTOs.DiscardItemRequestDto)">
+            <summary>
+            丢弃物品
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.InventoryController.DiscardItems(XXX.Application.DTOs.BatchDiscardItemRequestDto)">
+            <summary>
+            批量丢弃背包道具。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.InventoryController.Organize">
+            <summary>
+            整理背包
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.InventoryController.LockItem(XXX.Application.DTOs.LockItemRequestDto)">
+            <summary>
+            锁定道具
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.InventoryController.UnlockItem(XXX.Application.DTOs.LockItemRequestDto)">
+            <summary>
+            解锁道具
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.LotteryController.GetPools">
+            <summary>
+            获取可用抽奖池列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.LotteryController.Draw(XXX.Application.DTOs.LotteryDrawRequestDto)">
+            <summary>
+            执行抽奖。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.MailController">
+            <summary>
+            玩家邮件控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.MailController.GetMails(System.Int32,System.Int32)">
+            <summary>
+            获取邮件列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.MailController.GetMailDetail(System.Int64)">
+            <summary>
+            获取邮件详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.MailController.MarkAsRead(System.Int64)">
+            <summary>
+            标记已读。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.MailController.ClaimAttachments(System.Int64)">
+            <summary>
+            领取附件。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.MailController.ClaimAll">
+            <summary>
+            一键领取所有附件。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.MailController.DeleteMail(System.Int64)">
+            <summary>
+            删除邮件。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.MailController.MarkAllAsRead">
+            <summary>
+            全部标为已读。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.PetController">
+            <summary>
+            灵宠系统接口。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PetController.#ctor(XXX.Application.Interfaces.IPetService)">
+            <summary>
+            初始化灵宠控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PetController.GetPlayerId">
+            <summary>
+            从当前登录上下文中读取玩家编号。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PetController.GetAll">
+            <summary>
+            获取当前玩家的全部灵宠。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PetController.GetDetail(System.String)">
+            <summary>
+            获取指定灵宠详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PetController.GetActive">
+            <summary>
+            获取当前出战灵宠。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PetController.SetActive(System.String)">
+            <summary>
+            设置指定灵宠为出战状态。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PetController.ClearActive">
+            <summary>
+            取消当前出战灵宠。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PetController.Feed(XXX.Application.DTOs.PetFeedRequestDto)">
+            <summary>
+            喂养指定灵宠。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PetController.Evolve(XXX.Application.DTOs.PetEvolveRequestDto)">
+            <summary>
+            进化指定灵宠。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PetController.Release(System.String)">
+            <summary>
+            放生指定灵宠。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.PillEffectController">
+            <summary>
+            丹药效果查询接口。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PillEffectController.#ctor(XXX.Infrastructure.Data.DbContext)">
+            <summary>
+            初始化丹药效果控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PillEffectController.GetPlayerId">
+            <summary>
+            从当前登录上下文中读取玩家编号。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PillEffectController.GetPillEffects">
+            <summary>
+            获取当前玩家的丹药效果总览。
+            返回永久生效和当前仍在生效的限时丹药列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PillEffectController.GetQualityName(System.Int32)">
+            <summary>
+            将品质整数值转换为品质名称。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.PlayerController">
+            <summary>
+            玩家控制器
+            提供玩家信息查询、更新等功能
+            </summary>
+        </member>
+        <member name="F:XXX.WebApi.Controllers.PlayerController._playerService">
+            <summary>
+            玩家核心服务。
+            </summary>
+        </member>
+        <member name="F:XXX.WebApi.Controllers.PlayerController._logger">
+            <summary>
+            玩家控制器日志记录器。
+            </summary>
+        </member>
+        <member name="F:XXX.WebApi.Controllers.PlayerController._assetStorageService">
+            <summary>
+            本地图片存储服务。
+            当前用于保存玩家头像。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PlayerController.#ctor(XXX.Application.Interfaces.IPlayerService,XXX.WebApi.Services.LocalAssetStorageService,Microsoft.Extensions.Logging.ILogger{XXX.WebApi.Controllers.PlayerController})">
+            <summary>
+            初始化玩家控制器。
+            </summary>
+            <param name="playerService">玩家核心服务。</param>
+            <param name="assetStorageService">本地图片存储服务。</param>
+            <param name="logger">日志记录器。</param>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PlayerController.GetCurrentPlayer">
+            <summary>
+            获取当前登录玩家的基础信息。
+            </summary>
+            <returns>当前玩家基础信息。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PlayerController.GetCurrentPlayerDetail">
+            <summary>
+            获取当前登录玩家的详细信息。
+            </summary>
+            <returns>当前玩家详细信息。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PlayerController.GetPlayerById(System.String)">
+            <summary>
+            根据玩家编号获取玩家基础信息。
+            </summary>
+            <param name="id">玩家编号。</param>
+            <returns>指定玩家基础信息。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PlayerController.UpdateCurrentPlayer(XXX.Application.DTOs.UpdatePlayerRequestDto)">
+            <summary>
+            更新当前登录玩家的可编辑资料。
+            </summary>
+            <param name="request">更新请求。</param>
+            <returns>更新后的玩家信息。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PlayerController.UploadAvatar(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            上传当前玩家头像。
+            </summary>
+            <param name="file">头像图片文件。</param>
+            <returns>更新头像后的玩家信息。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PlayerController.AddExp(XXX.Application.DTOs.AddExpRequestDto)">
+            <summary>
+            为当前玩家增加经验。
+            当前主要用于测试、管理脚本和快速构造成长状态。
+            </summary>
+            <param name="request">经验变更请求。</param>
+            <returns>更新后的玩家信息。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PlayerController.GetAttributePointOverview">
+            <summary>
+            获取当前玩家属性加点总览。
+            </summary>
+            <returns>当前玩家属性点总览。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PlayerController.AllocateAttributePoint(XXX.Application.DTOs.AdjustPlayerAttributePointRequestDto)">
+            <summary>
+            为当前玩家分配 1 点属性点。
+            </summary>
+            <param name="request">属性点调整请求。</param>
+            <returns>调整后的属性点总览。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PlayerController.RefundAttributePoint(XXX.Application.DTOs.AdjustPlayerAttributePointRequestDto)">
+            <summary>
+            从当前玩家已投入的属性中返还 1 点属性点。
+            </summary>
+            <param name="request">属性点返还请求。</param>
+            <returns>返还后的属性点总览。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PlayerController.Breakthrough">
+            <summary>
+            执行一次真实突破。
+            </summary>
+            <returns>突破结果。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.PlayerController.GetCurrentPlayerId">
+            <summary>
+            统一获取当前登录玩家ID。
+            </summary>
+            <remarks>
+            方法作用：统一封装令牌声明读取，避免控制器重复解析逻辑。
+            关键逻辑：优先读取标准NameIdentifier，不存在时回退读取历史uid。
+            </remarks>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.QuestController">
+            <summary>
+            任务系统接口。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.QuestController.#ctor(XXX.Application.Interfaces.IQuestService,XXX.Infrastructure.Repositories.IRepository{XXX.Entity.UserEntity})">
+            <summary>
+            初始化任务控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.QuestController.GetPlayerId">
+            <summary>
+            从当前登录上下文中读取玩家编号。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.QuestController.GetAvailable">
+            <summary>
+            获取当前玩家可接取的任务配置。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.QuestController.GetAvailableOverview">
+            <summary>
+            获取当前玩家可接任务的前端总览结构。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.QuestController.GetActive">
+            <summary>
+            获取当前进行中的任务进度。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.QuestController.GetActiveOverview">
+            <summary>
+            获取当前进行中任务的前端总览结构。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.QuestController.GetCompleted">
+            <summary>
+            获取当前已完成任务的进度记录。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.QuestController.GetCompletedOverview">
+            <summary>
+            获取当前已完成任务的前端总览结构。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.QuestController.GetDetail(System.String)">
+            <summary>
+            获取单条任务配置详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.QuestController.Accept(XXX.Application.DTOs.AcceptQuestRequestDto)">
+            <summary>
+            接取任务。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.QuestController.Submit(XXX.Application.DTOs.SubmitQuestRequestDto)">
+            <summary>
+            提交任务。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.QuestController.Abandon(System.String)">
+            <summary>
+            放弃任务。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.QuestController.MapProgressListToDtoAsync(System.Collections.Generic.List{XXX.Quest.QuestProgress})">
+            <summary>
+            将任务进度列表映射成前端总览 DTO。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.QuestController.MapQuestToDto(XXX.Quest.QuestConfig,XXX.Quest.QuestProgress)">
+            <summary>
+            将任务配置和玩家进度映射成前端总览 DTO。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.QuestController.MapRewards(XXX.Quest.QuestReward)">
+            <summary>
+            将任务奖励映射成统一展示结构。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.RankingController">
+            <summary>
+            排行榜控制器
+            提供排行榜系统的API接口
+            </summary>
+            <remarks>
+            API列表：
+            - GET /api/ranking - 获取所有排行榜配置
+            - GET /api/ranking/{rankingId} - 获取排行榜排名
+            - GET /api/ranking/{rankingId}/stats - 获取排行榜统计
+            - GET /api/ranking/{rankingId}/my-rank - 获取我的排名
+            </remarks>
+        </member>
+        <member name="F:XXX.WebApi.Controllers.RankingController._rankingService">
+            <summary>
+            排行榜服务
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.RankingController.#ctor(XXX.Application.Interfaces.IRankingService)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="rankingService">排行榜服务</param>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.RankingController.GetPlayerId">
+            <summary>
+            从JWT令牌中获取玩家ID
+            </summary>
+            <returns>玩家ID，如果未登录则返回null</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.RankingController.GetAllRankings">
+            <summary>
+            获取所有排行榜配置
+            </summary>
+            <returns>排行榜配置列表</returns>
+            <response code="200">成功获取排行榜列表</response>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.RankingController.GetRanking(System.String,System.Int32)">
+            <summary>
+            获取排行榜排名
+            </summary>
+            <param name="rankingId">排行榜ID</param>
+            <param name="topCount">获取前N名，默认100</param>
+            <returns>排名条目列表</returns>
+            <response code="200">成功获取排名</response>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.RankingController.GetStats(System.String)">
+            <summary>
+            获取排行榜统计信息
+            </summary>
+            <param name="rankingId">排行榜ID</param>
+            <returns>统计信息</returns>
+            <response code="200">成功获取统计</response>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.RankingController.GetMyRank(System.String)">
+            <summary>
+            获取当前玩家在指定排行榜的排名
+            </summary>
+            <param name="rankingId">排行榜ID</param>
+            <returns>排名，如果未上榜则返回404</returns>
+            <response code="200">成功获取排名</response>
+            <response code="401">未登录</response>
+            <response code="404">未上榜</response>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.RedeemController">
+            <summary>
+            兑换码控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.RedeemController.#ctor(XXX.Application.Interfaces.IRedeemCodeService)">
+            <summary>
+            初始化兑换码控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.RedeemController.Claim(XXX.Application.DTOs.RedeemCodeRequestDto)">
+            <summary>
+            兑换一个奖励码。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.SectController">
+            <summary>
+            宗门控制器
+            提供宗门浏览、加入、心法修炼、捐献、切磋、大比、Boss、商店、福利等宗门系统功能
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.#ctor(XXX.Application.Interfaces.ISectService)">
+            <summary>
+            初始化宗门控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.GetAvailableSects">
+            <summary>
+            获取可用宗门列表
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.GetSectDetail(System.String)">
+            <summary>
+            获取宗门详情
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.JoinSect(System.String)">
+            <summary>
+            加入宗门
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.GetPlayerSutras">
+            <summary>
+            获取玩家心法进度
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.UpgradeSutraLayer(System.String)">
+            <summary>
+            升级心法层级
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.GetDonationStatus">
+            <summary>
+            获取捐献状态
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.Donate(XXX.Application.DTOs.SectDonateRequestDto)">
+            <summary>
+            执行捐献
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.GetDisciples">
+            <summary>
+            获取宗门弟子列表
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.Spar(System.String)">
+            <summary>
+            切磋
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.GetSectTournamentStatus">
+            <summary>
+            获取宗门大比状态
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.GetSectTournamentMatches(System.String)">
+            <summary>
+            获取宗门大比对战记录
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.ClaimSectTournamentReward(System.String)">
+            <summary>
+            领取宗门大比奖励
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.GetGeniusTournamentStatus">
+            <summary>
+            获取天骄赛状态
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.GetGeniusTournamentMatches(System.String)">
+            <summary>
+            获取天骄赛对战记录
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.ClaimGeniusTournamentReward(System.String)">
+            <summary>
+            领取天骄赛奖励
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.GetSectBossStatus">
+            <summary>
+            获取宗门Boss状态
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.AttackSectBoss">
+            <summary>
+            攻击宗门Boss
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.ClaimSectBossReward">
+            <summary>
+            领取宗门Boss奖励
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.GetSectShopItems">
+            <summary>
+            获取宗门商店商品列表
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.PurchaseSectShopItem(System.String)">
+            <summary>
+            购买宗门商店商品
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.GetSectBlessings">
+            <summary>
+            获取宗门福利列表
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.ClaimSectBlessing(System.String)">
+            <summary>
+            领取宗门福利
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SectController.GetSectTasks">
+            <summary>
+            获取宗门任务列表
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.ShopController">
+            <summary>
+            商店控制器。
+            </summary>
+            <remarks>
+            该控制器对外暴露的结果全部尽量使用前端直接可消费的 DTO，
+            目的是减少“后端返回的是领域对象，前端还要自己拼字段”的对接成本。
+            </remarks>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ShopController.#ctor(XXX.Application.Interfaces.IShopService,XXX.Infrastructure.Repositories.IRepository{XXX.Entity.UserEntity},Microsoft.Extensions.Logging.ILogger{XXX.WebApi.Controllers.ShopController})">
+            <summary>
+            初始化商店控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ShopController.GetShops">
+            <summary>
+            获取当前玩家可访问的商店列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ShopController.GetShop(System.String)">
+            <summary>
+            获取商店详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ShopController.BuyItem(XXX.Application.DTOs.BuyItemRequestDto)">
+            <summary>
+            购买商品。
+            </summary>
+            <remarks>
+            该接口会根据商店商品的真实类型自动分流为“买道具”或“买装备”，
+            这样前端不需要为了同一个商店页再拆两套购买接口。
+            </remarks>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ShopController.SellItem(XXX.Application.DTOs.SellItemRequestDto)">
+            <summary>
+            出售背包道具。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ShopController.SellItems(XXX.Application.DTOs.BatchSellInventoryItemsRequestDto)">
+            <summary>
+            批量出售背包道具。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.ShopController.RefreshShop(System.String)">
+            <summary>
+            刷新商店库存。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.SkillController">
+            <summary>
+            技能信息控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SkillController.#ctor(XXX.Application.Interfaces.ISkillService)">
+            <summary>
+            初始化技能控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SkillController.GetCurrentPlayerSkills">
+            <summary>
+            获取当前角色技能总览。
+            </summary>
+            <remarks>
+            返回结果会同时包含：
+            1. 当前已携带技能。
+            2. 当前已掌握但未携带的技能库。
+            </remarks>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SkillController.EquipSkill(XXX.Application.DTOs.SkillOperateRequestDto)">
+            <summary>
+            携带一个已掌握技能。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SkillController.UnequipSkill(XXX.Application.DTOs.SkillOperateRequestDto)">
+            <summary>
+            卸下一个当前已携带技能。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.SpiritFieldController">
+            <summary>
+            灵田系统接口。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SpiritFieldController.#ctor(XXX.Application.Interfaces.ISpiritFieldService)">
+            <summary>
+            初始化灵田控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SpiritFieldController.GetPlayerId">
+            <summary>
+            从当前登录上下文中读取玩家编号。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SpiritFieldController.GetInfo">
+            <summary>
+            获取灵田总览。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SpiritFieldController.GetAvailableCrops">
+            <summary>
+            获取当前可种植的作物模板。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SpiritFieldController.Plant(XXX.Application.DTOs.PlantCropRequestDto)">
+            <summary>
+            在指定地块播种。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SpiritFieldController.Harvest(XXX.Application.DTOs.HarvestCropRequestDto)">
+            <summary>
+            收获指定地块的作物。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SpiritFieldController.SpeedUp(XXX.Application.DTOs.SpeedUpCropRequestDto)">
+            <summary>
+            使用道具催熟指定地块。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.SpiritFieldController.UpgradePlot(System.Int32)">
+            <summary>
+            升级指定地块。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.TeamController">
+            <summary>
+            临时副本队伍控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.TeamController.#ctor(XXX.Application.Interfaces.ITeamService,Microsoft.Extensions.Logging.ILogger{XXX.WebApi.Controllers.TeamController})">
+            <summary>
+            初始化队伍控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.TeamController.GetAvailableParties">
+            <summary>
+            获取当前可加入的队伍列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.TeamController.GetCurrentParty">
+            <summary>
+            获取当前玩家所在队伍详情。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.TeamController.CreateParty(XXX.Application.DTOs.CreatePartyRequestDto)">
+            <summary>
+            创建一个新的临时队伍。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.TeamController.JoinParty(System.String)">
+            <summary>
+            加入指定队伍。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.TeamController.LeaveCurrentParty">
+            <summary>
+            离开当前所在队伍。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.TeamController.ToggleRecruiting(System.String)">
+            <summary>
+            切换队伍招募状态。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.TeamController.DismissParty(System.String)">
+            <summary>
+            解散指定队伍。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.TitleController">
+            <summary>
+            玩家称号控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.TitleController.GetOverview">
+            <summary>
+            获取玩家称号总览。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.TitleController.EquipTitle(XXX.WebApi.Controllers.EquipTitleRequest)">
+            <summary>
+            佩戴称号。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.TitleController.UnequipTitle">
+            <summary>
+            取消佩戴称号。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.EquipTitleRequest">
+            <summary>
+            佩戴称号请求。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.TowerController.GetLeaderboard(System.Int32)">
+            <summary>
+            获取通天塔排行榜。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.WeatherForecastController">
+            <summary>
+            默认模板自带的天气预报示例接口。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{XXX.WebApi.Controllers.WeatherForecastController})">
+            <summary>
+            初始化天气示例控制器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.WeatherForecastController.Get">
+            <summary>
+            返回一组随机天气数据，仅用于模板演示。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Controllers.WorldBossController">
+            <summary>
+            世界 Boss 玩家接口。
+            </summary>
+        </member>
+        <member name="F:XXX.WebApi.Controllers.WorldBossController._worldBossService">
+            <summary>
+            世界 Boss 玩家服务。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.WorldBossController.#ctor(XXX.Application.Interfaces.IWorldBossService)">
+            <summary>
+            初始化世界 Boss 玩家接口。
+            </summary>
+            <param name="worldBossService">世界 Boss 玩家服务。</param>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.WorldBossController.GetPlayerId">
+            <summary>
+            从当前登录态中读取玩家编号。
+            </summary>
+            <returns>登录玩家编号；未登录时返回空。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.WorldBossController.GetCurrent">
+            <summary>
+            获取当前世界 Boss 面板状态。
+            </summary>
+            <returns>当前 Boss、个人战斗状态与待领奖励信息。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.WorldBossController.Join">
+            <summary>
+            进入当前世界 Boss 战场。
+            </summary>
+            <returns>加入后的当前世界 Boss 面板数据。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.WorldBossController.GetRanking(System.Int32)">
+            <summary>
+            获取世界 Boss 伤害排行榜。
+            </summary>
+            <param name="top">返回的排行数量上限。</param>
+            <returns>排行榜列表。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.WorldBossController.GetLogs(System.Int32)">
+            <summary>
+            获取世界 Boss 战斗日志。
+            </summary>
+            <param name="count">返回的日志条数上限。</param>
+            <returns>按最新记录倒序排列的日志列表。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.WorldBossController.Action(XXX.Application.DTOs.WorldBossActionRequestDto)">
+            <summary>
+            执行一次世界 Boss 手动出手。
+            </summary>
+            <param name="request">本次出手请求。</param>
+            <returns>本次出手结果与追加战斗日志。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.WorldBossController.ToggleAuto(XXX.Application.DTOs.WorldBossAutoToggleRequestDto)">
+            <summary>
+            切换当前玩家的自动战斗状态。
+            </summary>
+            <param name="request">自动战斗切换请求。</param>
+            <returns>切换后的玩家战斗状态。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Controllers.WorldBossController.Claim">
+            <summary>
+            领取当前玩家未领取的世界 Boss 奖励。
+            </summary>
+            <returns>奖励领取结果。</returns>
+        </member>
+        <member name="T:XXX.WebApi.Extensions.ClaimsPrincipalExtensions">
+            <summary>
+            当前登录用户声明扩展方法。
+            作用：统一读取玩家ID，避免各控制器重复实现并出现声明类型不一致问题。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Extensions.ClaimsPrincipalExtensions.GetCurrentPlayerId(System.Security.Claims.ClaimsPrincipal)">
+            <summary>
+            获取当前登录玩家ID。
+            关键逻辑：
+            1. 优先读取标准JWT声明 ClaimTypes.NameIdentifier（新令牌标准写法）。
+            2. 若不存在则回退到历史自定义声明 uid（旧令牌兼容）。
+            3. 最终返回 null 表示令牌中不存在可用玩家ID。
+            </summary>
+            <param name="user">当前请求用户上下文。</param>
+            <returns>玩家ID，若未登录或声明缺失则返回 null。</returns>
+        </member>
+        <member name="T:XXX.WebApi.HostedServices.BattleProgressWorker">
+            <summary>
+            战斗任务与成就进度后台处理任务。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.BattleProgressWorker.#ctor(XXX.Application.Interfaces.IBattleProgressQueue,Microsoft.Extensions.DependencyInjection.IServiceScopeFactory,Microsoft.Extensions.Logging.ILogger{XXX.WebApi.HostedServices.BattleProgressWorker})">
+            <summary>
+            初始化战斗进度后台任务。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.BattleProgressWorker.ExecuteAsync(System.Threading.CancellationToken)">
+            <summary>
+            持续批量消费战斗进度事件。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.BattleProgressWorker.ProcessBatchAsync(System.Collections.Generic.IReadOnlyCollection{XXX.Application.Events.BattleProgressEvent},System.Threading.CancellationToken)">
+            <summary>
+            按事件顺序处理一批战斗进度事件。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.HostedServices.DailySectTaskResetWorker">
+            <summary>
+            宗门任务每日重置后台服务。
+            每天 0:00 自动重置所有宗门任务：清除旧进度，为宗门成员创建新的"进行中"记录。
+            重置后的状态流转：进行中 → 待领取（完成后） → 已完成（领取后） → 次日重置为进行中。
+            </summary>
+        </member>
+        <member name="F:XXX.WebApi.HostedServices.DailySectTaskResetWorker._lastResetDate">
+            <summary>
+            记录上次重置日期，避免同一天重复执行。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.DailySectTaskResetWorker.ResetSectDailyTasksAsync(SqlSugar.ISqlSugarClient,System.DateTime)">
+            <summary>
+            重置所有宗门任务（QuestType=5）的进度和完成记录，
+            并为宗门成员创建新的"进行中"进度记录。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.HostedServices.DungeonInstanceWorker">
+            <summary>
+            秘境实例后台推进任务。
+            定时检查所有运行中的秘境实例，触发 tick 事件。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.DungeonInstanceWorker.CatchUpMissedTicksAsync(System.Threading.CancellationToken)">
+            <summary>
+            停机补算：处理所有错过 tick 的实例。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.DungeonInstanceWorker.ProcessRunningInstancesAsync(System.Threading.CancellationToken)">
+            <summary>
+            处理所有到达 tick 时间的运行中实例。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.HostedServices.FavorabilityResetService">
+            <summary>
+            好感度每日赠送次数重置服务。
+            每日零点清空所有玩家的好感度赠送记录。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.HostedServices.MailCleanupWorker">
+            <summary>
+            邮件过期自动清理后台服务。
+            每6小时清理一次已过期的邮件。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.HostedServices.OfflineBattleWorker">
+            <summary>
+            单人普通地图离线挂机后台推进任务。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.OfflineBattleWorker.#ctor(Microsoft.Extensions.DependencyInjection.IServiceScopeFactory,Microsoft.Extensions.Logging.ILogger{XXX.WebApi.HostedServices.OfflineBattleWorker})">
+            <summary>
+            初始化离线挂机后台任务。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.OfflineBattleWorker.ExecuteAsync(System.Threading.CancellationToken)">
+            <summary>
+            周期推进离线挂机账号。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.HostedServices.PillEffectExpiryWorker">
+            <summary>
+            丹药限时效果过期清理后台服务。
+            每 30 秒扫描一次已过期的临时丹药效果，自动回滚属性加成并删除记录。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.PillEffectExpiryWorker.ProcessExpiredEffectsAsync(SqlSugar.ISqlSugarClient,XXX.Application.Interfaces.IGameSyncService,XXX.Application.Interfaces.IPlayerAttributeService,System.Threading.CancellationToken)">
+            <summary>
+            扫描并处理所有已过期的临时丹药效果。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.PillEffectExpiryWorker.ReverseEffectAsync(SqlSugar.ISqlSugarClient,XXX.Application.Interfaces.IGameSyncService,XXX.Application.Interfaces.IPlayerAttributeService,XXX.Entity.PlayerPillEffectEntity)">
+            <summary>
+            回滚单条过期丹药效果：撤销属性加成、删除记录、同步玩家数据。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.PillEffectExpiryWorker.ResolveAttributeTypeFromName(System.String)">
+            <summary>
+            将中文属性名称反向映射为 AttributeType 枚举值。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.HostedServices.SectTournamentWorker">
+            <summary>
+            宗门大比后台推进任务。
+            每 60 秒检查一次排期配置，到达预定时间后自动为每个宗门创建大比并执行淘汰赛。
+            </summary>
+        </member>
+        <member name="F:XXX.WebApi.HostedServices.SectTournamentWorker._lastTriggerDate">
+            <summary>
+            记录今天是否已经触发过大比，避免同一分钟内重复创建。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.SectTournamentWorker.CreateAndRunTournamentAsync(XXX.Infrastructure.Data.DbContext,XXX.Infrastructure.Repositories.IRepository{XXX.Entity.SectTournamentEntity},XXX.Infrastructure.Repositories.IRepository{XXX.Entity.SectTournamentMatchEntity},XXX.Infrastructure.Repositories.IRepository{XXX.Entity.GuildMemberEntity},XXX.Infrastructure.Repositories.IRepository{XXX.Entity.UserEntity},XXX.Entity.GuildEntity,System.DateTime,System.DateTime,System.Threading.CancellationToken)">
+            <summary>
+            为指定公会创建并执行大比。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.SectTournamentWorker.CalculateCombatPower(XXX.Entity.GuildMemberEntity,System.Collections.Generic.Dictionary{System.String,XXX.Entity.UserEntity})">
+            <summary>
+            计算玩家战斗力（简化版）。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.SectTournamentWorker.ResolveMatchWinner(XXX.Entity.GuildMemberEntity,XXX.Entity.GuildMemberEntity,System.Int64,System.Int64)">
+            <summary>
+            简化 PvP：战力高者 80% 概率获胜，20% 概率爆冷。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.SectTournamentWorker.GetNearestPowerOfTwo(System.Int32)">
+            <summary>
+            获取不小于 n 的最小 2 的幂。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.SectTournamentWorker.SettleTournamentsAsync(XXX.Infrastructure.Repositories.IRepository{XXX.Entity.SectTournamentEntity},XXX.Infrastructure.Repositories.IRepository{XXX.Entity.SectTournamentMatchEntity},XXX.Infrastructure.Repositories.IRepository{XXX.Entity.GuildEntity},XXX.Infrastructure.Repositories.IRepository{XXX.Entity.GuildMemberEntity},XXX.Infrastructure.Repositories.IRepository{XXX.Entity.UserEntity},System.DateTime)">
+            <summary>
+            结算已到期的大比。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.HostedServices.WorldBossWorker">
+            <summary>
+            世界 Boss 后台推进任务。
+            </summary>
+        </member>
+        <member name="F:XXX.WebApi.HostedServices.WorldBossWorker._serviceScopeFactory">
+            <summary>
+            服务作用域工厂。
+            每轮 Tick 都会创建独立作用域来解析 Scoped 服务。
+            </summary>
+        </member>
+        <member name="F:XXX.WebApi.HostedServices.WorldBossWorker._logger">
+            <summary>
+            世界 Boss 后台任务日志记录器。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.WorldBossWorker.#ctor(Microsoft.Extensions.DependencyInjection.IServiceScopeFactory,Microsoft.Extensions.Logging.ILogger{XXX.WebApi.HostedServices.WorldBossWorker})">
+            <summary>
+            初始化世界 Boss 后台推进任务。
+            </summary>
+            <param name="serviceScopeFactory">服务作用域工厂。</param>
+            <param name="logger">日志记录器。</param>
+        </member>
+        <member name="M:XXX.WebApi.HostedServices.WorldBossWorker.ExecuteAsync(System.Threading.CancellationToken)">
+            <summary>
+            按固定节奏推进世界 Boss 运行时。
+            当前策略为服务启动后延迟 2 秒，然后每秒执行一次 Tick。
+            </summary>
+            <param name="stoppingToken">后台任务停止令牌。</param>
+        </member>
+        <member name="T:XXX.WebApi.Hubs.ChatHub">
+            <summary>
+            聊天实时通信 Hub。
+            </summary>
+            <remarks>
+            与旧版 Core 层 ChatHub 不同，这里在连接时直接查数据库获取玩家实时状态，
+            只信任 JWT 里的玩家 ID，不把等级、宗门等运行态字段固化进令牌。
+            </remarks>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.ChatHub.#ctor(XXX.Application.Interfaces.IChatService,XXX.Infrastructure.Repositories.IRepository{XXX.Entity.UserEntity},Microsoft.Extensions.Logging.ILogger{XXX.WebApi.Hubs.ChatHub})">
+            <summary>
+            初始化聊天 Hub。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.ChatHub.OnConnectedAsync">
+            <summary>
+            连接建立时加载玩家实时资料并加入默认频道。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.ChatHub.OnDisconnectedAsync(System.Exception)">
+            <summary>
+            连接断开时清理在线态。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.ChatHub.SendMessage(System.String,System.String)">
+            <summary>
+            发送聊天消息。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.ChatHub.Heartbeat">
+            <summary>
+            心跳保活。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.ChatHub.JoinGuildChannel(System.String)">
+            <summary>
+            主动加入宗门频道。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.ChatHub.LeaveGuildChannel(System.String)">
+            <summary>
+            主动离开宗门频道。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.ChatHub.GetOnlinePlayers(System.Nullable{XXX.Chat.ChannelType})">
+            <summary>
+            获取在线玩家列表。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.ChatHub.GetRecentMessages(XXX.Chat.ChannelType,System.String,System.Int32)">
+            <summary>
+            获取最近消息。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.ChatHub.GetChannelInfo(XXX.Chat.ChannelType,System.String)">
+            <summary>
+            获取频道摘要信息。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.ChatHub.GetCurrentPlayerAsync">
+            <summary>
+            从当前鉴权上下文读取真实玩家。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.ChatHub.CleanupPreviousConnectionAsync(System.String)">
+            <summary>
+            如果同一账号已有旧连接，先从组里移除并通知旧连接下线。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.ChatHub.ResolveChannelId(XXX.Chat.ChannelType,System.String)">
+            <summary>
+            统一解析频道 ID，宗门频道默认回退到当前在线玩家的宗门。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.ChatHub.ResolveBroadcastGroup(System.String,System.String)">
+            <summary>
+            将聊天频道类型映射为 SignalR 组名。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Hubs.PartyHub">
+            <summary>
+            临时队伍实时同步 Hub。
+            </summary>
+            <remarks>
+            这一层只负责把在线连接和当前临时队伍做绑定，
+            让组队副本结算结果可以按队伍维度广播给所有在线成员。
+            </remarks>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.PartyHub.#ctor(XXX.Infrastructure.Repositories.IRepository{XXX.Entity.PartyMemberEntity},Microsoft.Extensions.Logging.ILogger{XXX.WebApi.Hubs.PartyHub})">
+            <summary>
+            初始化队伍实时 Hub。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.PartyHub.OnConnectedAsync">
+            <summary>
+            连接建立后同步当前队伍归属。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.PartyHub.OnDisconnectedAsync(System.Exception)">
+            <summary>
+            连接断开时移除旧队伍组绑定。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.PartyHub.SyncPartyGroups">
+            <summary>
+            主动同步当前连接的队伍归属。
+            当前玩家创建、加入、退出或解散队伍后，前端应调用一次。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Hubs.PartyHub.GetPartyGroupName(System.String)">
+            <summary>
+            统一生成队伍组名。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Hubs.PartyBattleResolvedEvent">
+            <summary>
+            队伍副本战斗结算广播事件。
+            </summary>
+        </member>
+        <member name="P:XXX.WebApi.Hubs.PartyBattleResolvedEvent.BattleId">
+            <summary>
+            战斗唯一编号。
+            </summary>
+        </member>
+        <member name="P:XXX.WebApi.Hubs.PartyBattleResolvedEvent.PartyId">
+            <summary>
+            队伍编号。
+            </summary>
+        </member>
+        <member name="P:XXX.WebApi.Hubs.PartyBattleResolvedEvent.DungeonId">
+            <summary>
+            副本编号。
+            </summary>
+        </member>
+        <member name="P:XXX.WebApi.Hubs.PartyBattleResolvedEvent.DungeonName">
+            <summary>
+            副本名称。
+            </summary>
+        </member>
+        <member name="P:XXX.WebApi.Hubs.PartyBattleResolvedEvent.StartedByPlayerId">
+            <summary>
+            发起战斗的玩家编号。
+            </summary>
+        </member>
+        <member name="P:XXX.WebApi.Hubs.PartyBattleResolvedEvent.Result">
+            <summary>
+            战斗结算结果。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Middleware.AdminAuditLoggingMiddleware">
+            <summary>
+            管理后台审计日志中间件。
+            记录后台非 GET 请求的请求体、响应体以及资源前后快照，作为第一版审计入口。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Middleware.AdminAuditLoggingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            初始化审计日志中间件。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Middleware.AdminAuditLoggingMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext,XXX.Infrastructure.Repositories.IRepository{XXX.Entity.AdminAuditLogEntity},XXX.Infrastructure.Data.DbContext)">
+            <summary>
+            执行审计日志记录。
+            </summary>
+        </member>
+        <member name="P:XXX.WebApi.Middleware.AdminAuditLoggingMiddleware.AuditDiffEntry.Path">
+            <summary>
+            发生变化的字段路径。
+            </summary>
+        </member>
+        <member name="P:XXX.WebApi.Middleware.AdminAuditLoggingMiddleware.AuditDiffEntry.Before">
+            <summary>
+            变更前值。
+            </summary>
+        </member>
+        <member name="P:XXX.WebApi.Middleware.AdminAuditLoggingMiddleware.AuditDiffEntry.After">
+            <summary>
+            变更后值。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Middleware.ApiResponseMiddleware">
+            <summary>
+            API统一响应中间件
+            将控制器返回的数据包装为统一格式
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Middleware.ApiResponseMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Middleware.ApiResponseMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            执行中间件
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Middleware.ApiResponseMiddleware.WriteResponseAsync(Microsoft.AspNetCore.Http.HttpContext,XXX.Application.DTOs.Responses.ApiResponse,System.IO.Stream)">
+            <summary>
+            写入包装后的响应
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Middleware.ExceptionHandlingMiddleware">
+            <summary>
+            全局异常处理中间件
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Middleware.ExceptionHandlingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger{XXX.WebApi.Middleware.ExceptionHandlingMiddleware})">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            执行中间件
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Middleware.ExceptionHandlingMiddleware.HandleExceptionAsync(Microsoft.AspNetCore.Http.HttpContext,System.Int32,System.String)">
+            <summary>
+            处理异常
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Services.AiIconGenerationService">
+            <summary>
+            AI 图标生成服务 —— 调用 Agnes API 生成图标，处理透明背景并裁剪。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Services.AiIconGenerationService.GenerateAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <summary>
+            生成图标并保存到指定分类目录。
+            </summary>
+            <param name="prompt">用户输入的提示词。</param>
+            <param name="category">存储分类（items / equipments 等）。</param>
+            <param name="oldRelativePath">上一次生成的图标路径（用于删除旧文件）。</param>
+            <param name="cancellationToken">取消令牌。</param>
+            <returns>生成结果，包含相对路径和预览 URL。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Services.AiIconGenerationService.DeleteFileIfExists(System.String)">
+            <summary>
+            删除指定相对路径对应的本地文件。
+            </summary>
+        </member>
+        <member name="T:XXX.WebApi.Services.LocalAssetStorageService">
+            <summary>
+            本地图片资源存储服务。
+            </summary>
+        </member>
+        <member name="F:XXX.WebApi.Services.LocalAssetStorageService.AllowedExtensions">
+            <summary>
+            允许上传的图片扩展名集合。
+            </summary>
+        </member>
+        <member name="F:XXX.WebApi.Services.LocalAssetStorageService.MaxFileSizeBytes">
+            <summary>
+            单张图片允许的最大大小，单位为字节。
+            当前限制为 5MB。
+            </summary>
+        </member>
+        <member name="F:XXX.WebApi.Services.LocalAssetStorageService._environment">
+            <summary>
+            Web 宿主环境。
+            用于定位 <c>wwwroot/uploads</c> 存储目录。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Services.LocalAssetStorageService.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            初始化本地图片资源存储服务。
+            </summary>
+            <param name="environment">Web 宿主环境。</param>
+        </member>
+        <member name="M:XXX.WebApi.Services.LocalAssetStorageService.SaveImageAsync(Microsoft.AspNetCore.Http.IFormFile,System.String,System.Threading.CancellationToken)">
+            <summary>
+            保存一张上传图片到本地目录。
+            会先校验文件大小和扩展名，再返回前端可直接访问的相对路径。
+            </summary>
+            <param name="file">上传文件。</param>
+            <param name="category">图片分类。</param>
+            <param name="cancellationToken">异步取消令牌。</param>
+            <returns>图片保存结果。</returns>
+        </member>
+        <member name="M:XXX.WebApi.Services.LocalAssetStorageService.SaveImageWithThumbnailAsync(Microsoft.AspNetCore.Http.IFormFile,System.Threading.CancellationToken)">
+            <summary>
+            保存上传图片并自动生成缩略图。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Services.LocalAssetStorageService.DeleteFeedbackImage(System.String)">
+            <summary>
+            删除反馈上传失败后遗留的临时图片。
+            仅允许处理 feedback 目录内的路径，避免路径越权。
+            </summary>
+        </member>
+        <member name="M:XXX.WebApi.Services.LocalAssetStorageService.NormalizeCategory(System.String)">
+            <summary>
+            归一化上传分类名称。
+            只允许映射到系统内置目录，避免任意字符串直接拼进磁盘路径。
+            </summary>
+            <param name="category">前端传入的图片分类。</param>
+            <returns>归一化后的安全目录名。</returns>
+        </member>
+        <member name="T:XXX.WebApi.WeatherForecast">
+            <summary>
+            默认模板自带的天气预报示例模型。
+            </summary>
+        </member>
+        <member name="P:XXX.WebApi.WeatherForecast.Date">
+            <summary>
+            日期。
+            </summary>
+        </member>
+        <member name="P:XXX.WebApi.WeatherForecast.TemperatureC">
+            <summary>
+            摄氏温度。
+            </summary>
+        </member>
+        <member name="P:XXX.WebApi.WeatherForecast.TemperatureF">
+            <summary>
+            华氏温度。
+            </summary>
+        </member>
+        <member name="P:XXX.WebApi.WeatherForecast.Summary">
+            <summary>
+            天气描述。
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <!--
+      解决方案级 restore 发生在项目级 Directory.Build.props 之前。
+      在仅安装 .NET 9 SDK 的环境里，这个仓库的 .sln restore 需要显式关闭 Static Graph Restore，
+      否则会出现“生成失败，但没有错误详情”的假失败。
+    -->
+    <RestoreUseStaticGraphEvaluation>false</RestoreUseStaticGraphEvaluation>
+  </PropertyGroup>
+</Project>

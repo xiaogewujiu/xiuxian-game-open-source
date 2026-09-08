@@ -1,0 +1,2702 @@
+[
+  {
+    "MapId": "map_s01_main_01",
+    "Name": "S01 主线区域 1",
+    "Level": 1,
+    "Kind": "Main",
+    "Stage": 1,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s01_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s01_main_01",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s01_main_02",
+        "Weight": 35,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s01_main_04",
+    "Name": "S01 主线区域 2",
+    "Level": 4,
+    "Kind": "Main",
+    "Stage": 1,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s01_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s01_main_03",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s01_main_04",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s01_main_05",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s01_main_07",
+    "Name": "S01 主线区域 3",
+    "Level": 7,
+    "Kind": "Main",
+    "Stage": 1,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 2,
+    "MonsterCountMax": 3,
+    "DropProfileId": "drop_s01_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s01_main_04",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s01_main_05",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s01_main_06",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s01_ore_02",
+    "Name": "S01 ore 材料图",
+    "Level": 1,
+    "Kind": "Materialore",
+    "Stage": 1,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s01_ore",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s01_ore_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s01_wood_03",
+    "Name": "S01 wood 材料图",
+    "Level": 1,
+    "Kind": "Materialwood",
+    "Stage": 1,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s01_wood",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s01_wood_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s01_hide_05",
+    "Name": "S01 hide 材料图",
+    "Level": 1,
+    "Kind": "Materialhide",
+    "Stage": 1,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s01_hide",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s01_hide_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s01_crystal_06",
+    "Name": "S01 crystal 材料图",
+    "Level": 1,
+    "Kind": "Materialcrystal",
+    "Stage": 1,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s01_crystal",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s01_crystal_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s01_elite_08",
+    "Name": "S01 Elite 区域",
+    "Level": 1,
+    "Kind": "Elite",
+    "Stage": 1,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s01_elite",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s01_elite_01",
+        "Weight": 60,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s01_elite_02",
+        "Weight": 40,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "map_s01_boss_09",
+    "Name": "S01 Boss 区域",
+    "Level": 9,
+    "Kind": "Boss",
+    "Stage": 1,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s01_boss",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s01_elite_01",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s01_elite_02",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s01_boss",
+        "Weight": 30,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s01_01",
+    "Name": "S01 副本第 1 层",
+    "Level": 1,
+    "Kind": "DungeonLayer",
+    "Stage": 1,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s01_02",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s01_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s01_dungeon_01",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s01_02",
+    "Name": "S01 副本第 2 层",
+    "Level": 2,
+    "Kind": "DungeonLayer",
+    "Stage": 1,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s01_03",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s01_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s01_dungeon_02",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s01_03",
+    "Name": "S01 副本第 3 层",
+    "Level": 3,
+    "Kind": "DungeonLayer",
+    "Stage": 1,
+    "IsMainRoute": false,
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s01_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s01_dungeon_03",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s02_main_01",
+    "Name": "S02 主线区域 1",
+    "Level": 10,
+    "Kind": "Main",
+    "Stage": 2,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s02_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s02_main_01",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s02_main_02",
+        "Weight": 35,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s02_main_04",
+    "Name": "S02 主线区域 2",
+    "Level": 13,
+    "Kind": "Main",
+    "Stage": 2,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s02_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s02_main_03",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s02_main_04",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s02_main_05",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s02_main_07",
+    "Name": "S02 主线区域 3",
+    "Level": 16,
+    "Kind": "Main",
+    "Stage": 2,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 2,
+    "MonsterCountMax": 3,
+    "DropProfileId": "drop_s02_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s02_main_04",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s02_main_05",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s02_main_06",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s02_ore_02",
+    "Name": "S02 ore 材料图",
+    "Level": 10,
+    "Kind": "Materialore",
+    "Stage": 2,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s02_ore",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s02_ore_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s02_wood_03",
+    "Name": "S02 wood 材料图",
+    "Level": 10,
+    "Kind": "Materialwood",
+    "Stage": 2,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s02_wood",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s02_wood_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s02_hide_05",
+    "Name": "S02 hide 材料图",
+    "Level": 10,
+    "Kind": "Materialhide",
+    "Stage": 2,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s02_hide",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s02_hide_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s02_crystal_06",
+    "Name": "S02 crystal 材料图",
+    "Level": 10,
+    "Kind": "Materialcrystal",
+    "Stage": 2,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s02_crystal",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s02_crystal_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s02_elite_08",
+    "Name": "S02 Elite 区域",
+    "Level": 10,
+    "Kind": "Elite",
+    "Stage": 2,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s02_elite",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s02_elite_01",
+        "Weight": 60,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s02_elite_02",
+        "Weight": 40,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "map_s02_boss_09",
+    "Name": "S02 Boss 区域",
+    "Level": 19,
+    "Kind": "Boss",
+    "Stage": 2,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s02_boss",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s02_elite_01",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s02_elite_02",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s02_boss",
+        "Weight": 30,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s02_01",
+    "Name": "S02 副本第 1 层",
+    "Level": 10,
+    "Kind": "DungeonLayer",
+    "Stage": 2,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s02_02",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s02_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s02_dungeon_01",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s02_02",
+    "Name": "S02 副本第 2 层",
+    "Level": 11,
+    "Kind": "DungeonLayer",
+    "Stage": 2,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s02_03",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s02_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s02_dungeon_02",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s02_03",
+    "Name": "S02 副本第 3 层",
+    "Level": 12,
+    "Kind": "DungeonLayer",
+    "Stage": 2,
+    "IsMainRoute": false,
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s02_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s02_dungeon_03",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s03_main_01",
+    "Name": "S03 主线区域 1",
+    "Level": 20,
+    "Kind": "Main",
+    "Stage": 3,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s03_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s03_main_01",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s03_main_02",
+        "Weight": 35,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s03_main_04",
+    "Name": "S03 主线区域 2",
+    "Level": 23,
+    "Kind": "Main",
+    "Stage": 3,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s03_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s03_main_03",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s03_main_04",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s03_main_05",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s03_main_07",
+    "Name": "S03 主线区域 3",
+    "Level": 26,
+    "Kind": "Main",
+    "Stage": 3,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 2,
+    "MonsterCountMax": 3,
+    "DropProfileId": "drop_s03_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s03_main_04",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s03_main_05",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s03_main_06",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s03_ore_02",
+    "Name": "S03 ore 材料图",
+    "Level": 20,
+    "Kind": "Materialore",
+    "Stage": 3,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s03_ore",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s03_ore_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s03_wood_03",
+    "Name": "S03 wood 材料图",
+    "Level": 20,
+    "Kind": "Materialwood",
+    "Stage": 3,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s03_wood",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s03_wood_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s03_hide_05",
+    "Name": "S03 hide 材料图",
+    "Level": 20,
+    "Kind": "Materialhide",
+    "Stage": 3,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s03_hide",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s03_hide_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s03_crystal_06",
+    "Name": "S03 crystal 材料图",
+    "Level": 20,
+    "Kind": "Materialcrystal",
+    "Stage": 3,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s03_crystal",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s03_crystal_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s03_elite_08",
+    "Name": "S03 Elite 区域",
+    "Level": 20,
+    "Kind": "Elite",
+    "Stage": 3,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s03_elite",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s03_elite_01",
+        "Weight": 60,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s03_elite_02",
+        "Weight": 40,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "map_s03_boss_09",
+    "Name": "S03 Boss 区域",
+    "Level": 29,
+    "Kind": "Boss",
+    "Stage": 3,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s03_boss",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s03_elite_01",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s03_elite_02",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s03_boss",
+        "Weight": 30,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s03_01",
+    "Name": "S03 副本第 1 层",
+    "Level": 20,
+    "Kind": "DungeonLayer",
+    "Stage": 3,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s03_02",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s03_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s03_dungeon_01",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s03_02",
+    "Name": "S03 副本第 2 层",
+    "Level": 21,
+    "Kind": "DungeonLayer",
+    "Stage": 3,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s03_03",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s03_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s03_dungeon_02",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s03_03",
+    "Name": "S03 副本第 3 层",
+    "Level": 22,
+    "Kind": "DungeonLayer",
+    "Stage": 3,
+    "IsMainRoute": false,
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s03_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s03_dungeon_03",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s04_main_01",
+    "Name": "S04 主线区域 1",
+    "Level": 30,
+    "Kind": "Main",
+    "Stage": 4,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s04_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s04_main_01",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s04_main_02",
+        "Weight": 35,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s04_main_04",
+    "Name": "S04 主线区域 2",
+    "Level": 33,
+    "Kind": "Main",
+    "Stage": 4,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s04_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s04_main_03",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s04_main_04",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s04_main_05",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s04_main_07",
+    "Name": "S04 主线区域 3",
+    "Level": 36,
+    "Kind": "Main",
+    "Stage": 4,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 2,
+    "MonsterCountMax": 3,
+    "DropProfileId": "drop_s04_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s04_main_04",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s04_main_05",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s04_main_06",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s04_ore_02",
+    "Name": "S04 ore 材料图",
+    "Level": 30,
+    "Kind": "Materialore",
+    "Stage": 4,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s04_ore",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s04_ore_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s04_wood_03",
+    "Name": "S04 wood 材料图",
+    "Level": 30,
+    "Kind": "Materialwood",
+    "Stage": 4,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s04_wood",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s04_wood_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s04_hide_05",
+    "Name": "S04 hide 材料图",
+    "Level": 30,
+    "Kind": "Materialhide",
+    "Stage": 4,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s04_hide",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s04_hide_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s04_crystal_06",
+    "Name": "S04 crystal 材料图",
+    "Level": 30,
+    "Kind": "Materialcrystal",
+    "Stage": 4,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s04_crystal",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s04_crystal_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s04_elite_08",
+    "Name": "S04 Elite 区域",
+    "Level": 30,
+    "Kind": "Elite",
+    "Stage": 4,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s04_elite",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s04_elite_01",
+        "Weight": 60,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s04_elite_02",
+        "Weight": 40,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "map_s04_boss_09",
+    "Name": "S04 Boss 区域",
+    "Level": 39,
+    "Kind": "Boss",
+    "Stage": 4,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s04_boss",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s04_elite_01",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s04_elite_02",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s04_boss",
+        "Weight": 30,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s04_01",
+    "Name": "S04 副本第 1 层",
+    "Level": 30,
+    "Kind": "DungeonLayer",
+    "Stage": 4,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s04_02",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s04_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s04_dungeon_01",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s04_02",
+    "Name": "S04 副本第 2 层",
+    "Level": 31,
+    "Kind": "DungeonLayer",
+    "Stage": 4,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s04_03",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s04_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s04_dungeon_02",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s04_03",
+    "Name": "S04 副本第 3 层",
+    "Level": 32,
+    "Kind": "DungeonLayer",
+    "Stage": 4,
+    "IsMainRoute": false,
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s04_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s04_dungeon_03",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s05_main_01",
+    "Name": "S05 主线区域 1",
+    "Level": 40,
+    "Kind": "Main",
+    "Stage": 5,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s05_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s05_main_01",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s05_main_02",
+        "Weight": 35,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s05_main_04",
+    "Name": "S05 主线区域 2",
+    "Level": 43,
+    "Kind": "Main",
+    "Stage": 5,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s05_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s05_main_03",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s05_main_04",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s05_main_05",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s05_main_07",
+    "Name": "S05 主线区域 3",
+    "Level": 46,
+    "Kind": "Main",
+    "Stage": 5,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 2,
+    "MonsterCountMax": 3,
+    "DropProfileId": "drop_s05_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s05_main_04",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s05_main_05",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s05_main_06",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s05_ore_02",
+    "Name": "S05 ore 材料图",
+    "Level": 40,
+    "Kind": "Materialore",
+    "Stage": 5,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s05_ore",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s05_ore_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s05_wood_03",
+    "Name": "S05 wood 材料图",
+    "Level": 40,
+    "Kind": "Materialwood",
+    "Stage": 5,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s05_wood",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s05_wood_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s05_hide_05",
+    "Name": "S05 hide 材料图",
+    "Level": 40,
+    "Kind": "Materialhide",
+    "Stage": 5,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s05_hide",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s05_hide_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s05_crystal_06",
+    "Name": "S05 crystal 材料图",
+    "Level": 40,
+    "Kind": "Materialcrystal",
+    "Stage": 5,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s05_crystal",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s05_crystal_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s05_elite_08",
+    "Name": "S05 Elite 区域",
+    "Level": 40,
+    "Kind": "Elite",
+    "Stage": 5,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s05_elite",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s05_elite_01",
+        "Weight": 60,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s05_elite_02",
+        "Weight": 40,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "map_s05_boss_09",
+    "Name": "S05 Boss 区域",
+    "Level": 49,
+    "Kind": "Boss",
+    "Stage": 5,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s05_boss",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s05_elite_01",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s05_elite_02",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s05_boss",
+        "Weight": 30,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s05_01",
+    "Name": "S05 副本第 1 层",
+    "Level": 40,
+    "Kind": "DungeonLayer",
+    "Stage": 5,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s05_02",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s05_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s05_dungeon_01",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s05_02",
+    "Name": "S05 副本第 2 层",
+    "Level": 41,
+    "Kind": "DungeonLayer",
+    "Stage": 5,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s05_03",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s05_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s05_dungeon_02",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s05_03",
+    "Name": "S05 副本第 3 层",
+    "Level": 42,
+    "Kind": "DungeonLayer",
+    "Stage": 5,
+    "IsMainRoute": false,
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s05_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s05_dungeon_03",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s06_main_01",
+    "Name": "S06 主线区域 1",
+    "Level": 50,
+    "Kind": "Main",
+    "Stage": 6,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s06_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s06_main_01",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s06_main_02",
+        "Weight": 35,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s06_main_04",
+    "Name": "S06 主线区域 2",
+    "Level": 53,
+    "Kind": "Main",
+    "Stage": 6,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s06_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s06_main_03",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s06_main_04",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s06_main_05",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s06_main_07",
+    "Name": "S06 主线区域 3",
+    "Level": 56,
+    "Kind": "Main",
+    "Stage": 6,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 2,
+    "MonsterCountMax": 3,
+    "DropProfileId": "drop_s06_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s06_main_04",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s06_main_05",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s06_main_06",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s06_ore_02",
+    "Name": "S06 ore 材料图",
+    "Level": 50,
+    "Kind": "Materialore",
+    "Stage": 6,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s06_ore",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s06_ore_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s06_wood_03",
+    "Name": "S06 wood 材料图",
+    "Level": 50,
+    "Kind": "Materialwood",
+    "Stage": 6,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s06_wood",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s06_wood_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s06_hide_05",
+    "Name": "S06 hide 材料图",
+    "Level": 50,
+    "Kind": "Materialhide",
+    "Stage": 6,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s06_hide",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s06_hide_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s06_crystal_06",
+    "Name": "S06 crystal 材料图",
+    "Level": 50,
+    "Kind": "Materialcrystal",
+    "Stage": 6,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s06_crystal",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s06_crystal_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s06_elite_08",
+    "Name": "S06 Elite 区域",
+    "Level": 50,
+    "Kind": "Elite",
+    "Stage": 6,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s06_elite",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s06_elite_01",
+        "Weight": 60,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s06_elite_02",
+        "Weight": 40,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "map_s06_boss_09",
+    "Name": "S06 Boss 区域",
+    "Level": 59,
+    "Kind": "Boss",
+    "Stage": 6,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s06_boss",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s06_elite_01",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s06_elite_02",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s06_boss",
+        "Weight": 30,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s06_01",
+    "Name": "S06 副本第 1 层",
+    "Level": 50,
+    "Kind": "DungeonLayer",
+    "Stage": 6,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s06_02",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s06_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s06_dungeon_01",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s06_02",
+    "Name": "S06 副本第 2 层",
+    "Level": 51,
+    "Kind": "DungeonLayer",
+    "Stage": 6,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s06_03",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s06_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s06_dungeon_02",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s06_03",
+    "Name": "S06 副本第 3 层",
+    "Level": 52,
+    "Kind": "DungeonLayer",
+    "Stage": 6,
+    "IsMainRoute": false,
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s06_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s06_dungeon_03",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s07_main_01",
+    "Name": "S07 主线区域 1",
+    "Level": 60,
+    "Kind": "Main",
+    "Stage": 7,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s07_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s07_main_01",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s07_main_02",
+        "Weight": 35,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s07_main_04",
+    "Name": "S07 主线区域 2",
+    "Level": 63,
+    "Kind": "Main",
+    "Stage": 7,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s07_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s07_main_03",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s07_main_04",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s07_main_05",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s07_main_07",
+    "Name": "S07 主线区域 3",
+    "Level": 66,
+    "Kind": "Main",
+    "Stage": 7,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 2,
+    "MonsterCountMax": 3,
+    "DropProfileId": "drop_s07_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s07_main_04",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s07_main_05",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s07_main_06",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s07_ore_02",
+    "Name": "S07 ore 材料图",
+    "Level": 60,
+    "Kind": "Materialore",
+    "Stage": 7,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s07_ore",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s07_ore_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s07_wood_03",
+    "Name": "S07 wood 材料图",
+    "Level": 60,
+    "Kind": "Materialwood",
+    "Stage": 7,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s07_wood",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s07_wood_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s07_hide_05",
+    "Name": "S07 hide 材料图",
+    "Level": 60,
+    "Kind": "Materialhide",
+    "Stage": 7,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s07_hide",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s07_hide_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s07_crystal_06",
+    "Name": "S07 crystal 材料图",
+    "Level": 60,
+    "Kind": "Materialcrystal",
+    "Stage": 7,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s07_crystal",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s07_crystal_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s07_elite_08",
+    "Name": "S07 Elite 区域",
+    "Level": 60,
+    "Kind": "Elite",
+    "Stage": 7,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s07_elite",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s07_elite_01",
+        "Weight": 60,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s07_elite_02",
+        "Weight": 40,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "map_s07_boss_09",
+    "Name": "S07 Boss 区域",
+    "Level": 69,
+    "Kind": "Boss",
+    "Stage": 7,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s07_boss",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s07_elite_01",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s07_elite_02",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s07_boss",
+        "Weight": 30,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s07_01",
+    "Name": "S07 副本第 1 层",
+    "Level": 60,
+    "Kind": "DungeonLayer",
+    "Stage": 7,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s07_02",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s07_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s07_dungeon_01",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s07_02",
+    "Name": "S07 副本第 2 层",
+    "Level": 61,
+    "Kind": "DungeonLayer",
+    "Stage": 7,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s07_03",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s07_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s07_dungeon_02",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s07_03",
+    "Name": "S07 副本第 3 层",
+    "Level": 62,
+    "Kind": "DungeonLayer",
+    "Stage": 7,
+    "IsMainRoute": false,
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s07_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s07_dungeon_03",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s08_main_01",
+    "Name": "S08 主线区域 1",
+    "Level": 70,
+    "Kind": "Main",
+    "Stage": 8,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s08_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s08_main_01",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s08_main_02",
+        "Weight": 35,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s08_main_04",
+    "Name": "S08 主线区域 2",
+    "Level": 73,
+    "Kind": "Main",
+    "Stage": 8,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s08_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s08_main_03",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s08_main_04",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s08_main_05",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s08_main_07",
+    "Name": "S08 主线区域 3",
+    "Level": 76,
+    "Kind": "Main",
+    "Stage": 8,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 2,
+    "MonsterCountMax": 3,
+    "DropProfileId": "drop_s08_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s08_main_04",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s08_main_05",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s08_main_06",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s08_ore_02",
+    "Name": "S08 ore 材料图",
+    "Level": 70,
+    "Kind": "Materialore",
+    "Stage": 8,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s08_ore",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s08_ore_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s08_wood_03",
+    "Name": "S08 wood 材料图",
+    "Level": 70,
+    "Kind": "Materialwood",
+    "Stage": 8,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s08_wood",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s08_wood_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s08_hide_05",
+    "Name": "S08 hide 材料图",
+    "Level": 70,
+    "Kind": "Materialhide",
+    "Stage": 8,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s08_hide",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s08_hide_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s08_crystal_06",
+    "Name": "S08 crystal 材料图",
+    "Level": 70,
+    "Kind": "Materialcrystal",
+    "Stage": 8,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s08_crystal",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s08_crystal_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s08_elite_08",
+    "Name": "S08 Elite 区域",
+    "Level": 70,
+    "Kind": "Elite",
+    "Stage": 8,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s08_elite",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s08_elite_01",
+        "Weight": 60,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s08_elite_02",
+        "Weight": 40,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "map_s08_boss_09",
+    "Name": "S08 Boss 区域",
+    "Level": 79,
+    "Kind": "Boss",
+    "Stage": 8,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s08_boss",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s08_elite_01",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s08_elite_02",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s08_boss",
+        "Weight": 30,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s08_01",
+    "Name": "S08 副本第 1 层",
+    "Level": 70,
+    "Kind": "DungeonLayer",
+    "Stage": 8,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s08_02",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s08_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s08_dungeon_01",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s08_02",
+    "Name": "S08 副本第 2 层",
+    "Level": 71,
+    "Kind": "DungeonLayer",
+    "Stage": 8,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s08_03",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s08_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s08_dungeon_02",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s08_03",
+    "Name": "S08 副本第 3 层",
+    "Level": 72,
+    "Kind": "DungeonLayer",
+    "Stage": 8,
+    "IsMainRoute": false,
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s08_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s08_dungeon_03",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s09_main_01",
+    "Name": "S09 主线区域 1",
+    "Level": 80,
+    "Kind": "Main",
+    "Stage": 9,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s09_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s09_main_01",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s09_main_02",
+        "Weight": 35,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s09_main_04",
+    "Name": "S09 主线区域 2",
+    "Level": 83,
+    "Kind": "Main",
+    "Stage": 9,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s09_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s09_main_03",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s09_main_04",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s09_main_05",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s09_main_07",
+    "Name": "S09 主线区域 3",
+    "Level": 86,
+    "Kind": "Main",
+    "Stage": 9,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 2,
+    "MonsterCountMax": 3,
+    "DropProfileId": "drop_s09_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s09_main_04",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s09_main_05",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s09_main_06",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s09_ore_02",
+    "Name": "S09 ore 材料图",
+    "Level": 80,
+    "Kind": "Materialore",
+    "Stage": 9,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s09_ore",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s09_ore_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s09_wood_03",
+    "Name": "S09 wood 材料图",
+    "Level": 80,
+    "Kind": "Materialwood",
+    "Stage": 9,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s09_wood",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s09_wood_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s09_hide_05",
+    "Name": "S09 hide 材料图",
+    "Level": 80,
+    "Kind": "Materialhide",
+    "Stage": 9,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s09_hide",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s09_hide_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s09_crystal_06",
+    "Name": "S09 crystal 材料图",
+    "Level": 80,
+    "Kind": "Materialcrystal",
+    "Stage": 9,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s09_crystal",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s09_crystal_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s09_elite_08",
+    "Name": "S09 Elite 区域",
+    "Level": 80,
+    "Kind": "Elite",
+    "Stage": 9,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s09_elite",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s09_elite_01",
+        "Weight": 60,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s09_elite_02",
+        "Weight": 40,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "map_s09_boss_09",
+    "Name": "S09 Boss 区域",
+    "Level": 89,
+    "Kind": "Boss",
+    "Stage": 9,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s09_boss",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s09_elite_01",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s09_elite_02",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s09_boss",
+        "Weight": 30,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s09_01",
+    "Name": "S09 副本第 1 层",
+    "Level": 80,
+    "Kind": "DungeonLayer",
+    "Stage": 9,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s09_02",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s09_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s09_dungeon_01",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s09_02",
+    "Name": "S09 副本第 2 层",
+    "Level": 81,
+    "Kind": "DungeonLayer",
+    "Stage": 9,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s09_03",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s09_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s09_dungeon_02",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s09_03",
+    "Name": "S09 副本第 3 层",
+    "Level": 82,
+    "Kind": "DungeonLayer",
+    "Stage": 9,
+    "IsMainRoute": false,
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s09_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s09_dungeon_03",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s10_main_01",
+    "Name": "S10 主线区域 1",
+    "Level": 90,
+    "Kind": "Main",
+    "Stage": 10,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s10_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s10_main_01",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s10_main_02",
+        "Weight": 35,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s10_main_04",
+    "Name": "S10 主线区域 2",
+    "Level": 93,
+    "Kind": "Main",
+    "Stage": 10,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s10_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s10_main_03",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s10_main_04",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s10_main_05",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s10_main_07",
+    "Name": "S10 主线区域 3",
+    "Level": 96,
+    "Kind": "Main",
+    "Stage": 10,
+    "IsMainRoute": true,
+    "Carrying": false,
+    "MonsterCountMin": 2,
+    "MonsterCountMax": 3,
+    "DropProfileId": "drop_s10_main",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s10_main_04",
+        "Weight": 45,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s10_main_05",
+        "Weight": 35,
+        "MaxCount": 2
+      },
+      {
+        "MonsterTemplateId": "mon_s10_main_06",
+        "Weight": 20,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s10_ore_02",
+    "Name": "S10 ore 材料图",
+    "Level": 90,
+    "Kind": "Materialore",
+    "Stage": 10,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s10_ore",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s10_ore_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s10_wood_03",
+    "Name": "S10 wood 材料图",
+    "Level": 90,
+    "Kind": "Materialwood",
+    "Stage": 10,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s10_wood",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s10_wood_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s10_hide_05",
+    "Name": "S10 hide 材料图",
+    "Level": 90,
+    "Kind": "Materialhide",
+    "Stage": 10,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s10_hide",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s10_hide_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s10_crystal_06",
+    "Name": "S10 crystal 材料图",
+    "Level": 90,
+    "Kind": "Materialcrystal",
+    "Stage": 10,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s10_crystal",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s10_crystal_guardian",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "map_s10_elite_08",
+    "Name": "S10 Elite 区域",
+    "Level": 90,
+    "Kind": "Elite",
+    "Stage": 10,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s10_elite",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s10_elite_01",
+        "Weight": 60,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s10_elite_02",
+        "Weight": 40,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "map_s10_boss_09",
+    "Name": "S10 Boss 区域",
+    "Level": 100,
+    "Kind": "Boss",
+    "Stage": 10,
+    "IsMainRoute": false,
+    "Carrying": false,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s10_boss",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s10_elite_01",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s10_elite_02",
+        "Weight": 35,
+        "MaxCount": 1
+      },
+      {
+        "MonsterTemplateId": "mon_s10_boss",
+        "Weight": 30,
+        "MaxCount": 1
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s10_01",
+    "Name": "S10 副本第 1 层",
+    "Level": 90,
+    "Kind": "DungeonLayer",
+    "Stage": 10,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s10_02",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s10_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s10_dungeon_01",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s10_02",
+    "Name": "S10 副本第 2 层",
+    "Level": 91,
+    "Kind": "DungeonLayer",
+    "Stage": 10,
+    "IsMainRoute": false,
+    "NextMapId": "fuben_s10_03",
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 1,
+    "DropProfileId": "drop_s10_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s10_dungeon_02",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  },
+  {
+    "MapId": "fuben_s10_03",
+    "Name": "S10 副本第 3 层",
+    "Level": 92,
+    "Kind": "DungeonLayer",
+    "Stage": 10,
+    "IsMainRoute": false,
+    "Carrying": true,
+    "MonsterCountMin": 1,
+    "MonsterCountMax": 2,
+    "DropProfileId": "drop_s10_dungeon",
+    "SpawnRules": [
+      {
+        "MonsterTemplateId": "mon_s10_dungeon_03",
+        "Weight": 100,
+        "MaxCount": 2
+      }
+    ]
+  }
+]

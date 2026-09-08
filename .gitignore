@@ -1,0 +1,24 @@
+# .NET build output
+**/bin/
+**/obj/
+**/publish/
+**/.vs/
+
+# Frontend dependencies and builds
+**/node_modules/
+**/dist/
+**/.vite/
+
+# Runtime logs and temporary files
+**/*.log
+**/*.db-shm
+**/*.db-wal
+**/.hermes/
+
+# IDE files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+

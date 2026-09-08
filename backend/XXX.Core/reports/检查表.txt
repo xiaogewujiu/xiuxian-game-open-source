@@ -1,0 +1,170 @@
+———
+
+  |ID|技能名|类型|目标|范围|BuffIds|Buff目标检查|逻辑风险|
+  |-:|---|---|---|---:|---|---|---|
+  |1|重击|Physical|敌方|1|-|OK|-|
+  |2|毒刃|Physical|敌方|1|buff_001|OK|-|
+  |3|火球术|Magic|敌方|1|buff_002|OK|-|
+  |4|治愈术|Heal|友方|1|-|OK|-|
+  |5|群体治疗|Heal|友方|0|buff_003|OK|-|
+  |6|雷击|Magic|敌方|0|-|OK|-|
+  |7|震慑|Physical|敌方|2|buff_005|OK|-|
+  |8|破甲斩|Physical|敌方|1|buff_006|OK|-|
+  |9|铁壁守护|Heal|友方|1|buff_007|OK|-|
+  |10|狂暴之力|Heal|友方|1|buff_008|OK|-|
+  |11|虚弱诅咒|Magic|敌方|1|buff_009|OK|-|
+  |12|沉默之印|Magic|敌方|1|buff_010|OK|-|
+  |13|剧毒之刺|Physical|敌方|1|buff_011|OK|multi_effect_target_uses_first_only|
+  |14|神圣庇护|Heal|友方|1|buff_012|OK|multi_effect_target_uses_first_only|
+  |15|真实打击|True|敌方|1|-|OK|-|
+  |16|连环斩|Physical|敌方|1|-|OK|-|
+  |17|冰霜新星|Magic|敌方|0|-|OK|-|
+  |19|冰封|Magic|敌方|1|buff_015|OK|-|
+  |20|撕裂|Physical|敌方|1|buff_016|OK|-|
+  |21|魔法屏障|Heal|友方|1|buff_017|OK|-|
+  |22|魔法侵蚀|Magic|敌方|1|buff_018|OK|-|
+  |23|嗜血狂暴|Heal|友方|1|buff_019|OK|multi_effect_target_uses_first_only|
+  |24|荆棘护甲|Heal|友方|1|buff_020|OK|-|
+  |25|圣光护盾|Heal|友方|1|buff_021|OK|-|
+  |26|狂怒打击|Physical|敌方|1|buff_022|OK|-|
+  |27|闪光弹|Magic|敌方|0|buff_023|OK|-|
+  |28|鹰眼|Heal|友方|1|buff_024|OK|-|
+  |29|致命一击|Physical|敌方|1|buff_025|buff_targets_ally_but_skill_targets_enemy|-|
+  |30|神圣祝福|Heal|友方|1|buff_026|OK|-|
+  |31|全能祝福|Heal|友方|0|buff_027|OK|multi_effect_target_uses_first_only|
+  |32|黑暗诅咒|Magic|敌方|0|buff_028|OK|multi_effect_target_uses_first_only|
+  |33|魔力充能|Heal|友方|1|buff_029|OK|-|
+  |34|魔力吸取|Magic|敌方|1|buff_030|OK|-|
+  |35|陨石术|Magic|敌方|0|-|OK|-|
+  |36|旋风斩|Physical|敌方|0|-|OK|-|
+  |37|复活术|Revive|友方|1|-|OK|-|
+  |38|狂风暴雨|Magic|敌方|0|-|OK|-|
+  |39|终极治疗|Heal|友方|0|-|OK|-|
+  |40|毁灭打击|True|敌方|0|-|OK|-|
+  |41|连环火球|Magic|敌方|1|buff_002|OK|-|
+  |42|剧毒爆发|Magic|敌方|0|buff_011|OK|multi_effect_target_uses_first_only|
+  |43|群体护盾|Heal|友方|0|buff_021|OK|-|
+  |44|血祭|BloodSacrifice|敌方|1|-|OK|-|
+  |47|生命转换|LifeConversion|敌方|1|-|OK|-|
+  |48|反击姿态|Heal|友方|1|buff_020|OK|-|
+  |49|终极爆发|Physical|敌方|1|-|OK|-|
+  |50|神圣审判|Magic|敌方|1|buff_009,buff_018,buff_023|OK|-|
+  |51|连环斩(多段)|Physical|敌方|1|-|OK|-|
+  |52|元素爆发|Magic|敌方|0|buff_002|OK|-|
+  |53|治疗连击|Heal|友方|1|-|OK|-|
+  |54|蓄力一击|Physical|敌方|1|-|OK|-|
+  |55|神圣连击|Heal|友方|1|buff_021|OK|-|
+  |56|连环毒刃|Physical|敌方|1|buff_001|OK|-|
+  |57|连环火球|Magic|敌方|1|buff_002|OK|-|
+  |58|狂风暴雨|Magic|敌方|0|-|OK|-|
+  |59|旋风斩|Physical|敌方|0|-|OK|-|
+  |60|神圣审判|Magic|敌方|1|buff_009,buff_018,buff_023|OK|-|
+  |61|寒冰箭|Physical|敌方|1|buff_041_frost_arrow|OK|-|
+  |62|战术标记|Buff|敌方|1|buff_042_tactical_weakness|OK|multi_effect_target_uses_first_only|
+  |63|疾风步|Buff|友方|1|buff_043_wind_step|OK|cooldown_modifier_logic|
+  |64|不屈意志|Buff|友方|1|buff_037_undying|OK|self_only_buff_with_ally_target_skill|
+  |65|斩杀一击|Physical|敌方|1|buff_040_execute|OK|execute_threshold_fixed_30|
+  |66|禁咒|Buff|敌方|1|buff_033_heal_block|OK|-|
+  |67|时间扭曲|Buff|友方|0|buff_035_haste|OK|-|
+  |68|泥沼陷阱|Buff|敌方|0|buff_034_slow|OK|-|
+  |69|法力燃烧|Buff|敌方|1|buff_039_cooldown_increase|OK|cooldown_modifier_logic|
+  |70|急速冷却|Buff|友方|1|buff_038_cooldown_reduction|OK|cooldown_modifier_logic|
+  |71|缴械射击|Physical|敌方|1|buff_044_disarm|OK|-|
+  |72|土牢术|Magic|敌方|1|buff_045_root|OK|-|
+  |73|破防重击|Physical|敌方|1|buff_046_armor_break|OK|-|
+  |74|守护誓言|Buff|友方|1|buff_047_sanctuary|OK|self_only_buff_with_ally_target_skill|
+  |75|复活誓言|Buff|友方|1|buff_048_auto_revive|OK|self_only_buff_with_ally_target_skill|
+
+  ———
+  
+   |BuffID|名称|效果数|首效果类型|首目标阵营|首目标数量|首随机|首选自己|备注|
+  |---|---|---:|---|---|---:|---|---|---|
+  |buff_001|中毒|1|DamageOverTime|1|1|False|False| |
+  |buff_002|灼烧|1|DamageOverTime|1|1|False|False| |
+  |buff_003|回春|1|HealOverTime|2|1|True|False| |
+  |buff_004|生命涌动|1|HealOverTime|2|1|True|False| |
+  |buff_005|眩晕|1|Stun|1|2|False|False| |
+  |buff_006|破甲|1|DefenseDown|1|1|False|False| |
+  |buff_007|铁壁|1|DefenseUp|2|1|True|False| |
+  |buff_008|狂暴|1|AttackUp|2|1|True|False| |
+  |buff_009|虚弱|1|AttackDown|1|1|False|False| |
+  |buff_010|沉默|1|Silence|1|1|False|False| |
+  |buff_011|剧毒|2|DamageOverTime|1|1|False|False|multi_effect|
+  |buff_012|神圣护盾|2|HealOverTime|2|1|True|False|multi_effect|
+  |buff_015|冰冻|1|Stun|1|1|False|False| |
+  |buff_016|流血|1|DamageOverTime|1|1|False|False| |
+  |buff_017|魔法护盾|1|DefenseUp|2|1|True|False| |
+  |buff_018|魔法易伤|1|DefenseDown|1|1|False|False| |
+  |buff_019|嗜血|2|AttackUp|2|1|True|False|multi_effect|
+  |buff_020|荆棘之甲|1|ReflectDamage|2|1|True|False| |
+  |buff_021|护盾|1|Shield|2|1|True|False| |
+  |buff_022|狂怒|1|AttackUp|（默认1）|（默认0）|（默认True）|True| |
+  |buff_023|致盲|1|AccuracyDown|1|1|False|False| |
+  |buff_024|专注|1|AccuracyUp|2|1|True|False| |
+  |buff_025|暴击强化|1|CritRateUp|2|1|True|False| |
+  |buff_026|免疫|1|Immunity|2|1|True|False| |
+  |buff_027|全能强化|2|AttackUp|2|1|True|False|multi_effect|
+  |buff_028|诅咒|2|AttackDown|1|1|False|False|multi_effect|
+  |buff_029|魔力充能|1|ManaOverTime|2|1|True|False| |
+  |buff_030|魔力枯竭|1|ManaDrain|1|1|False|False| |
+  |buff_031|强化暴击伤害|1|CritDamageUp|2|1|True|False| |
+  |buff_032|削弱暴击|1|CritRateDown|1|1|False|False| |
+  |buff_033|嘲讽|1|Taunt|1|1|False|False| |
+  |buff_034|暴击抵抗|1|CritResist|2|1|True|False| |
+  |buff_035|连击强化|1|ComboRateUp|2|1|True|False| |
+  |buff_036|连击增幅|1|ComboDamageUp|2|1|True|False| |
+  |buff_037|反击强化|1|CounterRateUp|2|1|True|False| |
+  |buff_038|反击增幅|1|CounterDamageUp|2|1|True|False| |
+  |buff_033_heal_block|禁疗|1|HealBlock|1|1|False|False| |
+  |buff_034_slow|减速|1|Slow|1|1|False|False| |
+  |buff_035_haste|加速|1|Haste|2|1|False|False| |
+  |buff_036_vulnerability|易伤|1|Vulnerability|1|1|False|False| |
+  |buff_037_undying|不屈|1|Undying|2|1|True|True| |
+  |buff_038_cooldown_reduction|冷却缩减|1|CooldownReduction|2|1|True|True|cooldown_logic_issue|
+  |buff_039_cooldown_increase|冷却延迟|1|CooldownIncrease|1|1|False|False|cooldown_logic_issue|
+  |buff_040_execute|斩杀意图|1|Execute|2|1|True|True|execute_threshold_fixed_30|
+  |buff_041_frost_arrow|寒冰减速|1|Slow|1|1|False|False| |
+  |buff_042_tactical_weakness|战术弱点|2|Vulnerability|1|1|False|False|multi_effect|
+  |buff_043_wind_step|疾风步|2|Haste|2|0|False|False|multi_effect,cooldown_logic_issue|
+  |buff_044_disarm|缴械|1|Disarm|1|1|False|False| |
+  |buff_045_root|束缚|1|Root|1|1|False|False| |
+  |buff_046_armor_break|破防|1|ArmorBreak|1|1|False|False| |
+  |buff_047_sanctuary|庇护|1|Sanctuary|2|1|True|True| |
+  |buff_048_auto_revive|自动复活|1|AutoRevive|2|1|True|True| |
+  |passive_atk_20|攻击强化|1|AttackUp|2|1|False|True| |
+  |passive_def_20|防御强化|1|DefenseUp|2|1|False|True| |
+  |passive_speed_15|速度强化|1|Haste|2|1|False|True| |
+  |passive_combo_25|连击强化|1|ComboRateUp|2|1|False|True| |
+  |passive_counter_25|反击强化|1|CounterRateUp|2|1|False|True| |
+  |passive_crit_20|暴击强化|1|CritRateUp|2|1|False|True| |
+  |passive_lifesteal_15|吸血强化|1|Lifesteal|2|1|False|True| |
+  |passive_reflect_20|反伤强化|1|ReflectDamage|2|1|False|True| |
+  |passive_curse_slow|减速光环|1|Slow|1|2|True|False| |
+  |passive_curse_weak|虚弱光环|1|AttackDown|1|1|True|False| |
+  |passive_curse_vuln|易伤光环|1|Vulnerability|1|1|True|False| |
+  |passive_aura_atk|攻击光环|1|AttackUp|2|0|False|False| |
+  |passive_aura_def|防御光环|1|DefenseUp|2|0|False|False| |
+  |passive_aura_speed|速度光环|1|Haste|2|0|False|False| |
+  |passive_execute|斩杀意图|1|Execute|2|1|False|True|execute_threshold_fixed_30|
+  |passive_undying|不屈意志|1|Undying|2|1|False|True| |
+
+  ———
+
+
+
+  ## 4) 多效果 buff 只按“第一个效果”选目标（确定问题）
+
+  - 受影响 Buff：buff_011 buff_012 buff_019 buff_027 buff_028 buff_042_tactical_weakness buff_043_wind_step
+  - 问题：目标选择仅取 Effects[0] 的目标规则，其它效果配置被忽略
+  - 需要检查属性：多效果 buff 的 TargetCamp/TargetCount/IsRandomTarget 是否必须一致
+  - 关键代码：Battle/BuffProcessor.cs:335
+
+  ## 5) “自我 Buff + 友方技能目标”可能不符合设计（待确认）
+
+  - 技能：64 / 74 / 75（TargetType=友方）
+  - Buff：buff_037_undying / buff_047_sanctuary / buff_048_auto_revive
+  - 问题：Buff 标记 TargetSelfOnly=true，技能却是友方目标，实际总是加给施法者
+  - 需要检查属性：TargetSelfOnly 是否应当为 true；技能是否应当强制自我
+  - 关键代码：GameData/BuffDataTemplates.cs（对应 Buff 定义） + Battle/BuffProcessor.cs:348
+
+  ———

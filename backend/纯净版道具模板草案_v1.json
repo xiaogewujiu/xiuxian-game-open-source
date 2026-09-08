@@ -1,0 +1,1794 @@
+[
+  {
+    "ItemId": "itm_cons_hp_small",
+    "Name": "小还丹",
+    "Type": "Consumable",
+    "UseLevel": 1,
+    "Module": "Battle",
+    "Source": "common"
+  },
+  {
+    "ItemId": "itm_cons_hp_medium",
+    "Name": "中还丹",
+    "Type": "Consumable",
+    "UseLevel": 20,
+    "Module": "Battle",
+    "Source": "common"
+  },
+  {
+    "ItemId": "itm_cons_hp_large",
+    "Name": "大还丹",
+    "Type": "Consumable",
+    "UseLevel": 50,
+    "Module": "Battle",
+    "Source": "common"
+  },
+  {
+    "ItemId": "itm_cons_mp_small",
+    "Name": "小回灵丹",
+    "Type": "Consumable",
+    "UseLevel": 1,
+    "Module": "Battle",
+    "Source": "common"
+  },
+  {
+    "ItemId": "itm_cons_mp_medium",
+    "Name": "中回灵丹",
+    "Type": "Consumable",
+    "UseLevel": 20,
+    "Module": "Battle",
+    "Source": "common"
+  },
+  {
+    "ItemId": "itm_cons_mp_large",
+    "Name": "大回灵丹",
+    "Type": "Consumable",
+    "UseLevel": 50,
+    "Module": "Battle",
+    "Source": "common"
+  },
+  {
+    "ItemId": "itm_cons_revive",
+    "Name": "还魂丹",
+    "Type": "Consumable",
+    "UseLevel": 20,
+    "Module": "Battle",
+    "Source": "boss/dungeon"
+  },
+  {
+    "ItemId": "itm_cons_attack",
+    "Name": "增攻丹",
+    "Type": "Pill",
+    "UseLevel": 10,
+    "Module": "Battle",
+    "Source": "alchemy"
+  },
+  {
+    "ItemId": "itm_cons_defense",
+    "Name": "护体丹",
+    "Type": "Pill",
+    "UseLevel": 10,
+    "Module": "Battle",
+    "Source": "alchemy"
+  },
+  {
+    "ItemId": "itm_cons_speed",
+    "Name": "疾行丹",
+    "Type": "Pill",
+    "UseLevel": 10,
+    "Module": "Battle",
+    "Source": "alchemy"
+  },
+  {
+    "ItemId": "itm_enhance_basic",
+    "Name": "基础强化石",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Equipment",
+    "Source": "common"
+  },
+  {
+    "ItemId": "itm_enhance_protect",
+    "Name": "强化护符",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Equipment",
+    "Source": "boss"
+  },
+  {
+    "ItemId": "itm_reroll_stone",
+    "Name": "洗练石",
+    "Type": "Material",
+    "UseLevel": 10,
+    "Module": "Equipment",
+    "Source": "elite"
+  },
+  {
+    "ItemId": "itm_reroll_lock",
+    "Name": "锁词石",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Equipment",
+    "Source": "dungeon"
+  },
+  {
+    "ItemId": "itm_quality_crystal",
+    "Name": "品质晶核",
+    "Type": "Material",
+    "UseLevel": 80,
+    "Module": "Equipment",
+    "Source": "final"
+  },
+  {
+    "ItemId": "itm_pet_food_basic",
+    "Name": "灵宠口粮",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Pet",
+    "Source": "common"
+  },
+  {
+    "ItemId": "itm_pet_food_advanced",
+    "Name": "高级灵宠口粮",
+    "Type": "Material",
+    "UseLevel": 40,
+    "Module": "Pet",
+    "Source": "elite"
+  },
+  {
+    "ItemId": "itm_pet_evolution_stone",
+    "Name": "灵宠进化石",
+    "Type": "Material",
+    "UseLevel": 20,
+    "Module": "Pet",
+    "Source": "boss"
+  },
+  {
+    "ItemId": "itm_pet_skill_core",
+    "Name": "灵宠技能核心",
+    "Type": "Material",
+    "UseLevel": 50,
+    "Module": "Pet",
+    "Source": "dungeon"
+  },
+  {
+    "ItemId": "itm_chest_gold_basic",
+    "Name": "基础金箱",
+    "Type": "Chest",
+    "UseLevel": 1,
+    "Module": "Reward",
+    "Source": "quest"
+  },
+  {
+    "ItemId": "itm_chest_stage",
+    "Name": "阶段宝箱",
+    "Type": "Chest",
+    "UseLevel": 10,
+    "Module": "Reward",
+    "Source": "boss"
+  },
+  {
+    "ItemId": "itm_key_common",
+    "Name": "普通宝箱钥匙",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Reward",
+    "Source": "common"
+  },
+  {
+    "ItemId": "itm_key_boss",
+    "Name": "首领宝箱钥匙",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Reward",
+    "Source": "boss"
+  },
+  {
+    "ItemId": "itm_skillbook_basic",
+    "Name": "基础技能书",
+    "Type": "SkillBook",
+    "UseLevel": 1,
+    "Module": "Skill",
+    "Source": "dungeon"
+  },
+  {
+    "ItemId": "itm_mat_ore_s01",
+    "Name": "S01 ore",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Forge",
+    "Source": "map_s01_ore_02"
+  },
+  {
+    "ItemId": "itm_mat_wood_s01",
+    "Name": "S01 wood",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Forge",
+    "Source": "map_s01_wood_03"
+  },
+  {
+    "ItemId": "itm_mat_hide_s01",
+    "Name": "S01 hide",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Pet",
+    "Source": "map_s01_hide_05"
+  },
+  {
+    "ItemId": "itm_mat_crystal_s01",
+    "Name": "S01 crystal",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Array",
+    "Source": "map_s01_crystal_06"
+  },
+  {
+    "ItemId": "itm_core_s01_common",
+    "Name": "S01 common_core",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Alchemy",
+    "Source": "mon_s01_ore_guardian"
+  },
+  {
+    "ItemId": "itm_core_s01_boss",
+    "Name": "S01 boss_core",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Forge",
+    "Source": "mon_s01_boss"
+  },
+  {
+    "ItemId": "itm_essence_s01",
+    "Name": "S01 essence",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Growth",
+    "Source": "mon_s01_elite_01"
+  },
+  {
+    "ItemId": "itm_boss_s01",
+    "Name": "S01 boss_material",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Forge",
+    "Source": "mon_s01_boss"
+  },
+  {
+    "ItemId": "itm_crop_s01_herb",
+    "Name": "S01 crop_herb",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Farm",
+    "Source": "seed_s01_herb"
+  },
+  {
+    "ItemId": "itm_crop_s01_flower",
+    "Name": "S01 crop_flower",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Farm",
+    "Source": "seed_s01_flower"
+  },
+  {
+    "ItemId": "seed_s01_herb",
+    "Name": "S01 seed_herb",
+    "Type": "Seed",
+    "UseLevel": 1,
+    "Module": "Farm",
+    "Source": "map_s01_ore_02"
+  },
+  {
+    "ItemId": "seed_s01_flower",
+    "Name": "S01 seed_flower",
+    "Type": "Seed",
+    "UseLevel": 1,
+    "Module": "Farm",
+    "Source": "map_s01_crystal_06"
+  },
+  {
+    "ItemId": "itm_pill_s01_break",
+    "Name": "S01 pill_break",
+    "Type": "Pill",
+    "UseLevel": 1,
+    "Module": "Alchemy",
+    "Source": "mon_s01_boss"
+  },
+  {
+    "ItemId": "itm_enhance_s01",
+    "Name": "S01 enhance",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Equipment",
+    "Source": "map_s01_ore_02"
+  },
+  {
+    "ItemId": "itm_reroll_s01",
+    "Name": "S01 reroll",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Equipment",
+    "Source": "mon_s01_elite_01"
+  },
+  {
+    "ItemId": "itm_token_s01",
+    "Name": "S01 token",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Dungeon",
+    "Source": "fuben_s01_01"
+  },
+  {
+    "ItemId": "itm_skillbook_s01",
+    "Name": "S01 skillbook",
+    "Type": "SkillBook",
+    "UseLevel": 1,
+    "Module": "Skill",
+    "Source": "fuben_s01_03"
+  },
+  {
+    "ItemId": "itm_blueprint_s01",
+    "Name": "S01 blueprint",
+    "Type": "Quest",
+    "UseLevel": 1,
+    "Module": "Forge",
+    "Source": "mon_s01_boss"
+  },
+  {
+    "ItemId": "itm_pet_s01_fragment",
+    "Name": "S01 pet_fragment",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Pet",
+    "Source": "mon_s01_elite_02"
+  },
+  {
+    "ItemId": "itm_essence_s01_minor",
+    "Name": "S01 essence_minor",
+    "Type": "Material",
+    "UseLevel": 1,
+    "Module": "Growth",
+    "Source": "mon_s01_dungeon_01"
+  },
+  {
+    "ItemId": "itm_mat_ore_s02",
+    "Name": "S02 ore",
+    "Type": "Material",
+    "UseLevel": 10,
+    "Module": "Forge",
+    "Source": "map_s02_ore_02"
+  },
+  {
+    "ItemId": "itm_mat_wood_s02",
+    "Name": "S02 wood",
+    "Type": "Material",
+    "UseLevel": 10,
+    "Module": "Forge",
+    "Source": "map_s02_wood_03"
+  },
+  {
+    "ItemId": "itm_mat_hide_s02",
+    "Name": "S02 hide",
+    "Type": "Material",
+    "UseLevel": 10,
+    "Module": "Pet",
+    "Source": "map_s02_hide_05"
+  },
+  {
+    "ItemId": "itm_mat_crystal_s02",
+    "Name": "S02 crystal",
+    "Type": "Material",
+    "UseLevel": 10,
+    "Module": "Array",
+    "Source": "map_s02_crystal_06"
+  },
+  {
+    "ItemId": "itm_core_s02_common",
+    "Name": "S02 common_core",
+    "Type": "Material",
+    "UseLevel": 10,
+    "Module": "Alchemy",
+    "Source": "mon_s02_ore_guardian"
+  },
+  {
+    "ItemId": "itm_core_s02_boss",
+    "Name": "S02 boss_core",
+    "Type": "Material",
+    "UseLevel": 10,
+    "Module": "Forge",
+    "Source": "mon_s02_boss"
+  },
+  {
+    "ItemId": "itm_essence_s02",
+    "Name": "S02 essence",
+    "Type": "Material",
+    "UseLevel": 10,
+    "Module": "Growth",
+    "Source": "mon_s02_elite_01"
+  },
+  {
+    "ItemId": "itm_boss_s02",
+    "Name": "S02 boss_material",
+    "Type": "Material",
+    "UseLevel": 10,
+    "Module": "Forge",
+    "Source": "mon_s02_boss"
+  },
+  {
+    "ItemId": "itm_crop_s02_herb",
+    "Name": "S02 crop_herb",
+    "Type": "Material",
+    "UseLevel": 10,
+    "Module": "Farm",
+    "Source": "seed_s02_herb"
+  },
+  {
+    "ItemId": "itm_crop_s02_flower",
+    "Name": "S02 crop_flower",
+    "Type": "Material",
+    "UseLevel": 10,
+    "Module": "Farm",
+    "Source": "seed_s02_flower"
+  },
+  {
+    "ItemId": "seed_s02_herb",
+    "Name": "S02 seed_herb",
+    "Type": "Seed",
+    "UseLevel": 10,
+    "Module": "Farm",
+    "Source": "map_s02_ore_02"
+  },
+  {
+    "ItemId": "seed_s02_flower",
+    "Name": "S02 seed_flower",
+    "Type": "Seed",
+    "UseLevel": 10,
+    "Module": "Farm",
+    "Source": "map_s02_crystal_06"
+  },
+  {
+    "ItemId": "itm_pill_s02_break",
+    "Name": "S02 pill_break",
+    "Type": "Pill",
+    "UseLevel": 10,
+    "Module": "Alchemy",
+    "Source": "mon_s02_boss"
+  },
+  {
+    "ItemId": "itm_enhance_s02",
+    "Name": "S02 enhance",
+    "Type": "Material",
+    "UseLevel": 10,
+    "Module": "Equipment",
+    "Source": "map_s02_ore_02"
+  },
+  {
+    "ItemId": "itm_reroll_s02",
+    "Name": "S02 reroll",
+    "Type": "Material",
+    "UseLevel": 10,
+    "Module": "Equipment",
+    "Source": "mon_s02_elite_01"
+  },
+  {
+    "ItemId": "itm_token_s02",
+    "Name": "S02 token",
+    "Type": "Material",
+    "UseLevel": 10,
+    "Module": "Dungeon",
+    "Source": "fuben_s02_01"
+  },
+  {
+    "ItemId": "itm_skillbook_s02",
+    "Name": "S02 skillbook",
+    "Type": "SkillBook",
+    "UseLevel": 10,
+    "Module": "Skill",
+    "Source": "fuben_s02_03"
+  },
+  {
+    "ItemId": "itm_blueprint_s02",
+    "Name": "S02 blueprint",
+    "Type": "Quest",
+    "UseLevel": 10,
+    "Module": "Forge",
+    "Source": "mon_s02_boss"
+  },
+  {
+    "ItemId": "itm_pet_s02_fragment",
+    "Name": "S02 pet_fragment",
+    "Type": "Material",
+    "UseLevel": 10,
+    "Module": "Pet",
+    "Source": "mon_s02_elite_02"
+  },
+  {
+    "ItemId": "itm_essence_s02_minor",
+    "Name": "S02 essence_minor",
+    "Type": "Material",
+    "UseLevel": 10,
+    "Module": "Growth",
+    "Source": "mon_s02_dungeon_01"
+  },
+  {
+    "ItemId": "itm_mat_ore_s03",
+    "Name": "S03 ore",
+    "Type": "Material",
+    "UseLevel": 20,
+    "Module": "Forge",
+    "Source": "map_s03_ore_02"
+  },
+  {
+    "ItemId": "itm_mat_wood_s03",
+    "Name": "S03 wood",
+    "Type": "Material",
+    "UseLevel": 20,
+    "Module": "Forge",
+    "Source": "map_s03_wood_03"
+  },
+  {
+    "ItemId": "itm_mat_hide_s03",
+    "Name": "S03 hide",
+    "Type": "Material",
+    "UseLevel": 20,
+    "Module": "Pet",
+    "Source": "map_s03_hide_05"
+  },
+  {
+    "ItemId": "itm_mat_crystal_s03",
+    "Name": "S03 crystal",
+    "Type": "Material",
+    "UseLevel": 20,
+    "Module": "Array",
+    "Source": "map_s03_crystal_06"
+  },
+  {
+    "ItemId": "itm_core_s03_common",
+    "Name": "S03 common_core",
+    "Type": "Material",
+    "UseLevel": 20,
+    "Module": "Alchemy",
+    "Source": "mon_s03_ore_guardian"
+  },
+  {
+    "ItemId": "itm_core_s03_boss",
+    "Name": "S03 boss_core",
+    "Type": "Material",
+    "UseLevel": 20,
+    "Module": "Forge",
+    "Source": "mon_s03_boss"
+  },
+  {
+    "ItemId": "itm_essence_s03",
+    "Name": "S03 essence",
+    "Type": "Material",
+    "UseLevel": 20,
+    "Module": "Growth",
+    "Source": "mon_s03_elite_01"
+  },
+  {
+    "ItemId": "itm_boss_s03",
+    "Name": "S03 boss_material",
+    "Type": "Material",
+    "UseLevel": 20,
+    "Module": "Forge",
+    "Source": "mon_s03_boss"
+  },
+  {
+    "ItemId": "itm_crop_s03_herb",
+    "Name": "S03 crop_herb",
+    "Type": "Material",
+    "UseLevel": 20,
+    "Module": "Farm",
+    "Source": "seed_s03_herb"
+  },
+  {
+    "ItemId": "itm_crop_s03_flower",
+    "Name": "S03 crop_flower",
+    "Type": "Material",
+    "UseLevel": 20,
+    "Module": "Farm",
+    "Source": "seed_s03_flower"
+  },
+  {
+    "ItemId": "seed_s03_herb",
+    "Name": "S03 seed_herb",
+    "Type": "Seed",
+    "UseLevel": 20,
+    "Module": "Farm",
+    "Source": "map_s03_ore_02"
+  },
+  {
+    "ItemId": "seed_s03_flower",
+    "Name": "S03 seed_flower",
+    "Type": "Seed",
+    "UseLevel": 20,
+    "Module": "Farm",
+    "Source": "map_s03_crystal_06"
+  },
+  {
+    "ItemId": "itm_pill_s03_break",
+    "Name": "S03 pill_break",
+    "Type": "Pill",
+    "UseLevel": 20,
+    "Module": "Alchemy",
+    "Source": "mon_s03_boss"
+  },
+  {
+    "ItemId": "itm_enhance_s03",
+    "Name": "S03 enhance",
+    "Type": "Material",
+    "UseLevel": 20,
+    "Module": "Equipment",
+    "Source": "map_s03_ore_02"
+  },
+  {
+    "ItemId": "itm_reroll_s03",
+    "Name": "S03 reroll",
+    "Type": "Material",
+    "UseLevel": 20,
+    "Module": "Equipment",
+    "Source": "mon_s03_elite_01"
+  },
+  {
+    "ItemId": "itm_token_s03",
+    "Name": "S03 token",
+    "Type": "Material",
+    "UseLevel": 20,
+    "Module": "Dungeon",
+    "Source": "fuben_s03_01"
+  },
+  {
+    "ItemId": "itm_skillbook_s03",
+    "Name": "S03 skillbook",
+    "Type": "SkillBook",
+    "UseLevel": 20,
+    "Module": "Skill",
+    "Source": "fuben_s03_03"
+  },
+  {
+    "ItemId": "itm_blueprint_s03",
+    "Name": "S03 blueprint",
+    "Type": "Quest",
+    "UseLevel": 20,
+    "Module": "Forge",
+    "Source": "mon_s03_boss"
+  },
+  {
+    "ItemId": "itm_pet_s03_fragment",
+    "Name": "S03 pet_fragment",
+    "Type": "Material",
+    "UseLevel": 20,
+    "Module": "Pet",
+    "Source": "mon_s03_elite_02"
+  },
+  {
+    "ItemId": "itm_essence_s03_minor",
+    "Name": "S03 essence_minor",
+    "Type": "Material",
+    "UseLevel": 20,
+    "Module": "Growth",
+    "Source": "mon_s03_dungeon_01"
+  },
+  {
+    "ItemId": "itm_mat_ore_s04",
+    "Name": "S04 ore",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Forge",
+    "Source": "map_s04_ore_02"
+  },
+  {
+    "ItemId": "itm_mat_wood_s04",
+    "Name": "S04 wood",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Forge",
+    "Source": "map_s04_wood_03"
+  },
+  {
+    "ItemId": "itm_mat_hide_s04",
+    "Name": "S04 hide",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Pet",
+    "Source": "map_s04_hide_05"
+  },
+  {
+    "ItemId": "itm_mat_crystal_s04",
+    "Name": "S04 crystal",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Array",
+    "Source": "map_s04_crystal_06"
+  },
+  {
+    "ItemId": "itm_core_s04_common",
+    "Name": "S04 common_core",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Alchemy",
+    "Source": "mon_s04_ore_guardian"
+  },
+  {
+    "ItemId": "itm_core_s04_boss",
+    "Name": "S04 boss_core",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Forge",
+    "Source": "mon_s04_boss"
+  },
+  {
+    "ItemId": "itm_essence_s04",
+    "Name": "S04 essence",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Growth",
+    "Source": "mon_s04_elite_01"
+  },
+  {
+    "ItemId": "itm_boss_s04",
+    "Name": "S04 boss_material",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Forge",
+    "Source": "mon_s04_boss"
+  },
+  {
+    "ItemId": "itm_crop_s04_herb",
+    "Name": "S04 crop_herb",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Farm",
+    "Source": "seed_s04_herb"
+  },
+  {
+    "ItemId": "itm_crop_s04_flower",
+    "Name": "S04 crop_flower",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Farm",
+    "Source": "seed_s04_flower"
+  },
+  {
+    "ItemId": "seed_s04_herb",
+    "Name": "S04 seed_herb",
+    "Type": "Seed",
+    "UseLevel": 30,
+    "Module": "Farm",
+    "Source": "map_s04_ore_02"
+  },
+  {
+    "ItemId": "seed_s04_flower",
+    "Name": "S04 seed_flower",
+    "Type": "Seed",
+    "UseLevel": 30,
+    "Module": "Farm",
+    "Source": "map_s04_crystal_06"
+  },
+  {
+    "ItemId": "itm_pill_s04_break",
+    "Name": "S04 pill_break",
+    "Type": "Pill",
+    "UseLevel": 30,
+    "Module": "Alchemy",
+    "Source": "mon_s04_boss"
+  },
+  {
+    "ItemId": "itm_enhance_s04",
+    "Name": "S04 enhance",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Equipment",
+    "Source": "map_s04_ore_02"
+  },
+  {
+    "ItemId": "itm_reroll_s04",
+    "Name": "S04 reroll",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Equipment",
+    "Source": "mon_s04_elite_01"
+  },
+  {
+    "ItemId": "itm_token_s04",
+    "Name": "S04 token",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Dungeon",
+    "Source": "fuben_s04_01"
+  },
+  {
+    "ItemId": "itm_skillbook_s04",
+    "Name": "S04 skillbook",
+    "Type": "SkillBook",
+    "UseLevel": 30,
+    "Module": "Skill",
+    "Source": "fuben_s04_03"
+  },
+  {
+    "ItemId": "itm_blueprint_s04",
+    "Name": "S04 blueprint",
+    "Type": "Quest",
+    "UseLevel": 30,
+    "Module": "Forge",
+    "Source": "mon_s04_boss"
+  },
+  {
+    "ItemId": "itm_pet_s04_fragment",
+    "Name": "S04 pet_fragment",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Pet",
+    "Source": "mon_s04_elite_02"
+  },
+  {
+    "ItemId": "itm_essence_s04_minor",
+    "Name": "S04 essence_minor",
+    "Type": "Material",
+    "UseLevel": 30,
+    "Module": "Growth",
+    "Source": "mon_s04_dungeon_01"
+  },
+  {
+    "ItemId": "itm_mat_ore_s05",
+    "Name": "S05 ore",
+    "Type": "Material",
+    "UseLevel": 40,
+    "Module": "Forge",
+    "Source": "map_s05_ore_02"
+  },
+  {
+    "ItemId": "itm_mat_wood_s05",
+    "Name": "S05 wood",
+    "Type": "Material",
+    "UseLevel": 40,
+    "Module": "Forge",
+    "Source": "map_s05_wood_03"
+  },
+  {
+    "ItemId": "itm_mat_hide_s05",
+    "Name": "S05 hide",
+    "Type": "Material",
+    "UseLevel": 40,
+    "Module": "Pet",
+    "Source": "map_s05_hide_05"
+  },
+  {
+    "ItemId": "itm_mat_crystal_s05",
+    "Name": "S05 crystal",
+    "Type": "Material",
+    "UseLevel": 40,
+    "Module": "Array",
+    "Source": "map_s05_crystal_06"
+  },
+  {
+    "ItemId": "itm_core_s05_common",
+    "Name": "S05 common_core",
+    "Type": "Material",
+    "UseLevel": 40,
+    "Module": "Alchemy",
+    "Source": "mon_s05_ore_guardian"
+  },
+  {
+    "ItemId": "itm_core_s05_boss",
+    "Name": "S05 boss_core",
+    "Type": "Material",
+    "UseLevel": 40,
+    "Module": "Forge",
+    "Source": "mon_s05_boss"
+  },
+  {
+    "ItemId": "itm_essence_s05",
+    "Name": "S05 essence",
+    "Type": "Material",
+    "UseLevel": 40,
+    "Module": "Growth",
+    "Source": "mon_s05_elite_01"
+  },
+  {
+    "ItemId": "itm_boss_s05",
+    "Name": "S05 boss_material",
+    "Type": "Material",
+    "UseLevel": 40,
+    "Module": "Forge",
+    "Source": "mon_s05_boss"
+  },
+  {
+    "ItemId": "itm_crop_s05_herb",
+    "Name": "S05 crop_herb",
+    "Type": "Material",
+    "UseLevel": 40,
+    "Module": "Farm",
+    "Source": "seed_s05_herb"
+  },
+  {
+    "ItemId": "itm_crop_s05_flower",
+    "Name": "S05 crop_flower",
+    "Type": "Material",
+    "UseLevel": 40,
+    "Module": "Farm",
+    "Source": "seed_s05_flower"
+  },
+  {
+    "ItemId": "seed_s05_herb",
+    "Name": "S05 seed_herb",
+    "Type": "Seed",
+    "UseLevel": 40,
+    "Module": "Farm",
+    "Source": "map_s05_ore_02"
+  },
+  {
+    "ItemId": "seed_s05_flower",
+    "Name": "S05 seed_flower",
+    "Type": "Seed",
+    "UseLevel": 40,
+    "Module": "Farm",
+    "Source": "map_s05_crystal_06"
+  },
+  {
+    "ItemId": "itm_pill_s05_break",
+    "Name": "S05 pill_break",
+    "Type": "Pill",
+    "UseLevel": 40,
+    "Module": "Alchemy",
+    "Source": "mon_s05_boss"
+  },
+  {
+    "ItemId": "itm_enhance_s05",
+    "Name": "S05 enhance",
+    "Type": "Material",
+    "UseLevel": 40,
+    "Module": "Equipment",
+    "Source": "map_s05_ore_02"
+  },
+  {
+    "ItemId": "itm_reroll_s05",
+    "Name": "S05 reroll",
+    "Type": "Material",
+    "UseLevel": 40,
+    "Module": "Equipment",
+    "Source": "mon_s05_elite_01"
+  },
+  {
+    "ItemId": "itm_token_s05",
+    "Name": "S05 token",
+    "Type": "Material",
+    "UseLevel": 40,
+    "Module": "Dungeon",
+    "Source": "fuben_s05_01"
+  },
+  {
+    "ItemId": "itm_skillbook_s05",
+    "Name": "S05 skillbook",
+    "Type": "SkillBook",
+    "UseLevel": 40,
+    "Module": "Skill",
+    "Source": "fuben_s05_03"
+  },
+  {
+    "ItemId": "itm_blueprint_s05",
+    "Name": "S05 blueprint",
+    "Type": "Quest",
+    "UseLevel": 40,
+    "Module": "Forge",
+    "Source": "mon_s05_boss"
+  },
+  {
+    "ItemId": "itm_pet_s05_fragment",
+    "Name": "S05 pet_fragment",
+    "Type": "Material",
+    "UseLevel": 40,
+    "Module": "Pet",
+    "Source": "mon_s05_elite_02"
+  },
+  {
+    "ItemId": "itm_essence_s05_minor",
+    "Name": "S05 essence_minor",
+    "Type": "Material",
+    "UseLevel": 40,
+    "Module": "Growth",
+    "Source": "mon_s05_dungeon_01"
+  },
+  {
+    "ItemId": "itm_mat_ore_s06",
+    "Name": "S06 ore",
+    "Type": "Material",
+    "UseLevel": 50,
+    "Module": "Forge",
+    "Source": "map_s06_ore_02"
+  },
+  {
+    "ItemId": "itm_mat_wood_s06",
+    "Name": "S06 wood",
+    "Type": "Material",
+    "UseLevel": 50,
+    "Module": "Forge",
+    "Source": "map_s06_wood_03"
+  },
+  {
+    "ItemId": "itm_mat_hide_s06",
+    "Name": "S06 hide",
+    "Type": "Material",
+    "UseLevel": 50,
+    "Module": "Pet",
+    "Source": "map_s06_hide_05"
+  },
+  {
+    "ItemId": "itm_mat_crystal_s06",
+    "Name": "S06 crystal",
+    "Type": "Material",
+    "UseLevel": 50,
+    "Module": "Array",
+    "Source": "map_s06_crystal_06"
+  },
+  {
+    "ItemId": "itm_core_s06_common",
+    "Name": "S06 common_core",
+    "Type": "Material",
+    "UseLevel": 50,
+    "Module": "Alchemy",
+    "Source": "mon_s06_ore_guardian"
+  },
+  {
+    "ItemId": "itm_core_s06_boss",
+    "Name": "S06 boss_core",
+    "Type": "Material",
+    "UseLevel": 50,
+    "Module": "Forge",
+    "Source": "mon_s06_boss"
+  },
+  {
+    "ItemId": "itm_essence_s06",
+    "Name": "S06 essence",
+    "Type": "Material",
+    "UseLevel": 50,
+    "Module": "Growth",
+    "Source": "mon_s06_elite_01"
+  },
+  {
+    "ItemId": "itm_boss_s06",
+    "Name": "S06 boss_material",
+    "Type": "Material",
+    "UseLevel": 50,
+    "Module": "Forge",
+    "Source": "mon_s06_boss"
+  },
+  {
+    "ItemId": "itm_crop_s06_herb",
+    "Name": "S06 crop_herb",
+    "Type": "Material",
+    "UseLevel": 50,
+    "Module": "Farm",
+    "Source": "seed_s06_herb"
+  },
+  {
+    "ItemId": "itm_crop_s06_flower",
+    "Name": "S06 crop_flower",
+    "Type": "Material",
+    "UseLevel": 50,
+    "Module": "Farm",
+    "Source": "seed_s06_flower"
+  },
+  {
+    "ItemId": "seed_s06_herb",
+    "Name": "S06 seed_herb",
+    "Type": "Seed",
+    "UseLevel": 50,
+    "Module": "Farm",
+    "Source": "map_s06_ore_02"
+  },
+  {
+    "ItemId": "seed_s06_flower",
+    "Name": "S06 seed_flower",
+    "Type": "Seed",
+    "UseLevel": 50,
+    "Module": "Farm",
+    "Source": "map_s06_crystal_06"
+  },
+  {
+    "ItemId": "itm_pill_s06_break",
+    "Name": "S06 pill_break",
+    "Type": "Pill",
+    "UseLevel": 50,
+    "Module": "Alchemy",
+    "Source": "mon_s06_boss"
+  },
+  {
+    "ItemId": "itm_enhance_s06",
+    "Name": "S06 enhance",
+    "Type": "Material",
+    "UseLevel": 50,
+    "Module": "Equipment",
+    "Source": "map_s06_ore_02"
+  },
+  {
+    "ItemId": "itm_reroll_s06",
+    "Name": "S06 reroll",
+    "Type": "Material",
+    "UseLevel": 50,
+    "Module": "Equipment",
+    "Source": "mon_s06_elite_01"
+  },
+  {
+    "ItemId": "itm_token_s06",
+    "Name": "S06 token",
+    "Type": "Material",
+    "UseLevel": 50,
+    "Module": "Dungeon",
+    "Source": "fuben_s06_01"
+  },
+  {
+    "ItemId": "itm_skillbook_s06",
+    "Name": "S06 skillbook",
+    "Type": "SkillBook",
+    "UseLevel": 50,
+    "Module": "Skill",
+    "Source": "fuben_s06_03"
+  },
+  {
+    "ItemId": "itm_blueprint_s06",
+    "Name": "S06 blueprint",
+    "Type": "Quest",
+    "UseLevel": 50,
+    "Module": "Forge",
+    "Source": "mon_s06_boss"
+  },
+  {
+    "ItemId": "itm_pet_s06_fragment",
+    "Name": "S06 pet_fragment",
+    "Type": "Material",
+    "UseLevel": 50,
+    "Module": "Pet",
+    "Source": "mon_s06_elite_02"
+  },
+  {
+    "ItemId": "itm_essence_s06_minor",
+    "Name": "S06 essence_minor",
+    "Type": "Material",
+    "UseLevel": 50,
+    "Module": "Growth",
+    "Source": "mon_s06_dungeon_01"
+  },
+  {
+    "ItemId": "itm_mat_ore_s07",
+    "Name": "S07 ore",
+    "Type": "Material",
+    "UseLevel": 60,
+    "Module": "Forge",
+    "Source": "map_s07_ore_02"
+  },
+  {
+    "ItemId": "itm_mat_wood_s07",
+    "Name": "S07 wood",
+    "Type": "Material",
+    "UseLevel": 60,
+    "Module": "Forge",
+    "Source": "map_s07_wood_03"
+  },
+  {
+    "ItemId": "itm_mat_hide_s07",
+    "Name": "S07 hide",
+    "Type": "Material",
+    "UseLevel": 60,
+    "Module": "Pet",
+    "Source": "map_s07_hide_05"
+  },
+  {
+    "ItemId": "itm_mat_crystal_s07",
+    "Name": "S07 crystal",
+    "Type": "Material",
+    "UseLevel": 60,
+    "Module": "Array",
+    "Source": "map_s07_crystal_06"
+  },
+  {
+    "ItemId": "itm_core_s07_common",
+    "Name": "S07 common_core",
+    "Type": "Material",
+    "UseLevel": 60,
+    "Module": "Alchemy",
+    "Source": "mon_s07_ore_guardian"
+  },
+  {
+    "ItemId": "itm_core_s07_boss",
+    "Name": "S07 boss_core",
+    "Type": "Material",
+    "UseLevel": 60,
+    "Module": "Forge",
+    "Source": "mon_s07_boss"
+  },
+  {
+    "ItemId": "itm_essence_s07",
+    "Name": "S07 essence",
+    "Type": "Material",
+    "UseLevel": 60,
+    "Module": "Growth",
+    "Source": "mon_s07_elite_01"
+  },
+  {
+    "ItemId": "itm_boss_s07",
+    "Name": "S07 boss_material",
+    "Type": "Material",
+    "UseLevel": 60,
+    "Module": "Forge",
+    "Source": "mon_s07_boss"
+  },
+  {
+    "ItemId": "itm_crop_s07_herb",
+    "Name": "S07 crop_herb",
+    "Type": "Material",
+    "UseLevel": 60,
+    "Module": "Farm",
+    "Source": "seed_s07_herb"
+  },
+  {
+    "ItemId": "itm_crop_s07_flower",
+    "Name": "S07 crop_flower",
+    "Type": "Material",
+    "UseLevel": 60,
+    "Module": "Farm",
+    "Source": "seed_s07_flower"
+  },
+  {
+    "ItemId": "seed_s07_herb",
+    "Name": "S07 seed_herb",
+    "Type": "Seed",
+    "UseLevel": 60,
+    "Module": "Farm",
+    "Source": "map_s07_ore_02"
+  },
+  {
+    "ItemId": "seed_s07_flower",
+    "Name": "S07 seed_flower",
+    "Type": "Seed",
+    "UseLevel": 60,
+    "Module": "Farm",
+    "Source": "map_s07_crystal_06"
+  },
+  {
+    "ItemId": "itm_pill_s07_break",
+    "Name": "S07 pill_break",
+    "Type": "Pill",
+    "UseLevel": 60,
+    "Module": "Alchemy",
+    "Source": "mon_s07_boss"
+  },
+  {
+    "ItemId": "itm_enhance_s07",
+    "Name": "S07 enhance",
+    "Type": "Material",
+    "UseLevel": 60,
+    "Module": "Equipment",
+    "Source": "map_s07_ore_02"
+  },
+  {
+    "ItemId": "itm_reroll_s07",
+    "Name": "S07 reroll",
+    "Type": "Material",
+    "UseLevel": 60,
+    "Module": "Equipment",
+    "Source": "mon_s07_elite_01"
+  },
+  {
+    "ItemId": "itm_token_s07",
+    "Name": "S07 token",
+    "Type": "Material",
+    "UseLevel": 60,
+    "Module": "Dungeon",
+    "Source": "fuben_s07_01"
+  },
+  {
+    "ItemId": "itm_skillbook_s07",
+    "Name": "S07 skillbook",
+    "Type": "SkillBook",
+    "UseLevel": 60,
+    "Module": "Skill",
+    "Source": "fuben_s07_03"
+  },
+  {
+    "ItemId": "itm_blueprint_s07",
+    "Name": "S07 blueprint",
+    "Type": "Quest",
+    "UseLevel": 60,
+    "Module": "Forge",
+    "Source": "mon_s07_boss"
+  },
+  {
+    "ItemId": "itm_pet_s07_fragment",
+    "Name": "S07 pet_fragment",
+    "Type": "Material",
+    "UseLevel": 60,
+    "Module": "Pet",
+    "Source": "mon_s07_elite_02"
+  },
+  {
+    "ItemId": "itm_essence_s07_minor",
+    "Name": "S07 essence_minor",
+    "Type": "Material",
+    "UseLevel": 60,
+    "Module": "Growth",
+    "Source": "mon_s07_dungeon_01"
+  },
+  {
+    "ItemId": "itm_mat_ore_s08",
+    "Name": "S08 ore",
+    "Type": "Material",
+    "UseLevel": 70,
+    "Module": "Forge",
+    "Source": "map_s08_ore_02"
+  },
+  {
+    "ItemId": "itm_mat_wood_s08",
+    "Name": "S08 wood",
+    "Type": "Material",
+    "UseLevel": 70,
+    "Module": "Forge",
+    "Source": "map_s08_wood_03"
+  },
+  {
+    "ItemId": "itm_mat_hide_s08",
+    "Name": "S08 hide",
+    "Type": "Material",
+    "UseLevel": 70,
+    "Module": "Pet",
+    "Source": "map_s08_hide_05"
+  },
+  {
+    "ItemId": "itm_mat_crystal_s08",
+    "Name": "S08 crystal",
+    "Type": "Material",
+    "UseLevel": 70,
+    "Module": "Array",
+    "Source": "map_s08_crystal_06"
+  },
+  {
+    "ItemId": "itm_core_s08_common",
+    "Name": "S08 common_core",
+    "Type": "Material",
+    "UseLevel": 70,
+    "Module": "Alchemy",
+    "Source": "mon_s08_ore_guardian"
+  },
+  {
+    "ItemId": "itm_core_s08_boss",
+    "Name": "S08 boss_core",
+    "Type": "Material",
+    "UseLevel": 70,
+    "Module": "Forge",
+    "Source": "mon_s08_boss"
+  },
+  {
+    "ItemId": "itm_essence_s08",
+    "Name": "S08 essence",
+    "Type": "Material",
+    "UseLevel": 70,
+    "Module": "Growth",
+    "Source": "mon_s08_elite_01"
+  },
+  {
+    "ItemId": "itm_boss_s08",
+    "Name": "S08 boss_material",
+    "Type": "Material",
+    "UseLevel": 70,
+    "Module": "Forge",
+    "Source": "mon_s08_boss"
+  },
+  {
+    "ItemId": "itm_crop_s08_herb",
+    "Name": "S08 crop_herb",
+    "Type": "Material",
+    "UseLevel": 70,
+    "Module": "Farm",
+    "Source": "seed_s08_herb"
+  },
+  {
+    "ItemId": "itm_crop_s08_flower",
+    "Name": "S08 crop_flower",
+    "Type": "Material",
+    "UseLevel": 70,
+    "Module": "Farm",
+    "Source": "seed_s08_flower"
+  },
+  {
+    "ItemId": "seed_s08_herb",
+    "Name": "S08 seed_herb",
+    "Type": "Seed",
+    "UseLevel": 70,
+    "Module": "Farm",
+    "Source": "map_s08_ore_02"
+  },
+  {
+    "ItemId": "seed_s08_flower",
+    "Name": "S08 seed_flower",
+    "Type": "Seed",
+    "UseLevel": 70,
+    "Module": "Farm",
+    "Source": "map_s08_crystal_06"
+  },
+  {
+    "ItemId": "itm_pill_s08_break",
+    "Name": "S08 pill_break",
+    "Type": "Pill",
+    "UseLevel": 70,
+    "Module": "Alchemy",
+    "Source": "mon_s08_boss"
+  },
+  {
+    "ItemId": "itm_enhance_s08",
+    "Name": "S08 enhance",
+    "Type": "Material",
+    "UseLevel": 70,
+    "Module": "Equipment",
+    "Source": "map_s08_ore_02"
+  },
+  {
+    "ItemId": "itm_reroll_s08",
+    "Name": "S08 reroll",
+    "Type": "Material",
+    "UseLevel": 70,
+    "Module": "Equipment",
+    "Source": "mon_s08_elite_01"
+  },
+  {
+    "ItemId": "itm_token_s08",
+    "Name": "S08 token",
+    "Type": "Material",
+    "UseLevel": 70,
+    "Module": "Dungeon",
+    "Source": "fuben_s08_01"
+  },
+  {
+    "ItemId": "itm_skillbook_s08",
+    "Name": "S08 skillbook",
+    "Type": "SkillBook",
+    "UseLevel": 70,
+    "Module": "Skill",
+    "Source": "fuben_s08_03"
+  },
+  {
+    "ItemId": "itm_blueprint_s08",
+    "Name": "S08 blueprint",
+    "Type": "Quest",
+    "UseLevel": 70,
+    "Module": "Forge",
+    "Source": "mon_s08_boss"
+  },
+  {
+    "ItemId": "itm_pet_s08_fragment",
+    "Name": "S08 pet_fragment",
+    "Type": "Material",
+    "UseLevel": 70,
+    "Module": "Pet",
+    "Source": "mon_s08_elite_02"
+  },
+  {
+    "ItemId": "itm_essence_s08_minor",
+    "Name": "S08 essence_minor",
+    "Type": "Material",
+    "UseLevel": 70,
+    "Module": "Growth",
+    "Source": "mon_s08_dungeon_01"
+  },
+  {
+    "ItemId": "itm_mat_ore_s09",
+    "Name": "S09 ore",
+    "Type": "Material",
+    "UseLevel": 80,
+    "Module": "Forge",
+    "Source": "map_s09_ore_02"
+  },
+  {
+    "ItemId": "itm_mat_wood_s09",
+    "Name": "S09 wood",
+    "Type": "Material",
+    "UseLevel": 80,
+    "Module": "Forge",
+    "Source": "map_s09_wood_03"
+  },
+  {
+    "ItemId": "itm_mat_hide_s09",
+    "Name": "S09 hide",
+    "Type": "Material",
+    "UseLevel": 80,
+    "Module": "Pet",
+    "Source": "map_s09_hide_05"
+  },
+  {
+    "ItemId": "itm_mat_crystal_s09",
+    "Name": "S09 crystal",
+    "Type": "Material",
+    "UseLevel": 80,
+    "Module": "Array",
+    "Source": "map_s09_crystal_06"
+  },
+  {
+    "ItemId": "itm_core_s09_common",
+    "Name": "S09 common_core",
+    "Type": "Material",
+    "UseLevel": 80,
+    "Module": "Alchemy",
+    "Source": "mon_s09_ore_guardian"
+  },
+  {
+    "ItemId": "itm_core_s09_boss",
+    "Name": "S09 boss_core",
+    "Type": "Material",
+    "UseLevel": 80,
+    "Module": "Forge",
+    "Source": "mon_s09_boss"
+  },
+  {
+    "ItemId": "itm_essence_s09",
+    "Name": "S09 essence",
+    "Type": "Material",
+    "UseLevel": 80,
+    "Module": "Growth",
+    "Source": "mon_s09_elite_01"
+  },
+  {
+    "ItemId": "itm_boss_s09",
+    "Name": "S09 boss_material",
+    "Type": "Material",
+    "UseLevel": 80,
+    "Module": "Forge",
+    "Source": "mon_s09_boss"
+  },
+  {
+    "ItemId": "itm_crop_s09_herb",
+    "Name": "S09 crop_herb",
+    "Type": "Material",
+    "UseLevel": 80,
+    "Module": "Farm",
+    "Source": "seed_s09_herb"
+  },
+  {
+    "ItemId": "itm_crop_s09_flower",
+    "Name": "S09 crop_flower",
+    "Type": "Material",
+    "UseLevel": 80,
+    "Module": "Farm",
+    "Source": "seed_s09_flower"
+  },
+  {
+    "ItemId": "seed_s09_herb",
+    "Name": "S09 seed_herb",
+    "Type": "Seed",
+    "UseLevel": 80,
+    "Module": "Farm",
+    "Source": "map_s09_ore_02"
+  },
+  {
+    "ItemId": "seed_s09_flower",
+    "Name": "S09 seed_flower",
+    "Type": "Seed",
+    "UseLevel": 80,
+    "Module": "Farm",
+    "Source": "map_s09_crystal_06"
+  },
+  {
+    "ItemId": "itm_pill_s09_break",
+    "Name": "S09 pill_break",
+    "Type": "Pill",
+    "UseLevel": 80,
+    "Module": "Alchemy",
+    "Source": "mon_s09_boss"
+  },
+  {
+    "ItemId": "itm_enhance_s09",
+    "Name": "S09 enhance",
+    "Type": "Material",
+    "UseLevel": 80,
+    "Module": "Equipment",
+    "Source": "map_s09_ore_02"
+  },
+  {
+    "ItemId": "itm_reroll_s09",
+    "Name": "S09 reroll",
+    "Type": "Material",
+    "UseLevel": 80,
+    "Module": "Equipment",
+    "Source": "mon_s09_elite_01"
+  },
+  {
+    "ItemId": "itm_token_s09",
+    "Name": "S09 token",
+    "Type": "Material",
+    "UseLevel": 80,
+    "Module": "Dungeon",
+    "Source": "fuben_s09_01"
+  },
+  {
+    "ItemId": "itm_skillbook_s09",
+    "Name": "S09 skillbook",
+    "Type": "SkillBook",
+    "UseLevel": 80,
+    "Module": "Skill",
+    "Source": "fuben_s09_03"
+  },
+  {
+    "ItemId": "itm_blueprint_s09",
+    "Name": "S09 blueprint",
+    "Type": "Quest",
+    "UseLevel": 80,
+    "Module": "Forge",
+    "Source": "mon_s09_boss"
+  },
+  {
+    "ItemId": "itm_pet_s09_fragment",
+    "Name": "S09 pet_fragment",
+    "Type": "Material",
+    "UseLevel": 80,
+    "Module": "Pet",
+    "Source": "mon_s09_elite_02"
+  },
+  {
+    "ItemId": "itm_essence_s09_minor",
+    "Name": "S09 essence_minor",
+    "Type": "Material",
+    "UseLevel": 80,
+    "Module": "Growth",
+    "Source": "mon_s09_dungeon_01"
+  },
+  {
+    "ItemId": "itm_mat_ore_s10",
+    "Name": "S10 ore",
+    "Type": "Material",
+    "UseLevel": 90,
+    "Module": "Forge",
+    "Source": "map_s10_ore_02"
+  },
+  {
+    "ItemId": "itm_mat_wood_s10",
+    "Name": "S10 wood",
+    "Type": "Material",
+    "UseLevel": 90,
+    "Module": "Forge",
+    "Source": "map_s10_wood_03"
+  },
+  {
+    "ItemId": "itm_mat_hide_s10",
+    "Name": "S10 hide",
+    "Type": "Material",
+    "UseLevel": 90,
+    "Module": "Pet",
+    "Source": "map_s10_hide_05"
+  },
+  {
+    "ItemId": "itm_mat_crystal_s10",
+    "Name": "S10 crystal",
+    "Type": "Material",
+    "UseLevel": 90,
+    "Module": "Array",
+    "Source": "map_s10_crystal_06"
+  },
+  {
+    "ItemId": "itm_core_s10_common",
+    "Name": "S10 common_core",
+    "Type": "Material",
+    "UseLevel": 90,
+    "Module": "Alchemy",
+    "Source": "mon_s10_ore_guardian"
+  },
+  {
+    "ItemId": "itm_core_s10_boss",
+    "Name": "S10 boss_core",
+    "Type": "Material",
+    "UseLevel": 90,
+    "Module": "Forge",
+    "Source": "mon_s10_boss"
+  },
+  {
+    "ItemId": "itm_essence_s10",
+    "Name": "S10 essence",
+    "Type": "Material",
+    "UseLevel": 90,
+    "Module": "Growth",
+    "Source": "mon_s10_elite_01"
+  },
+  {
+    "ItemId": "itm_boss_s10",
+    "Name": "S10 boss_material",
+    "Type": "Material",
+    "UseLevel": 90,
+    "Module": "Forge",
+    "Source": "mon_s10_boss"
+  },
+  {
+    "ItemId": "itm_crop_s10_herb",
+    "Name": "S10 crop_herb",
+    "Type": "Material",
+    "UseLevel": 90,
+    "Module": "Farm",
+    "Source": "seed_s10_herb"
+  },
+  {
+    "ItemId": "itm_crop_s10_flower",
+    "Name": "S10 crop_flower",
+    "Type": "Material",
+    "UseLevel": 90,
+    "Module": "Farm",
+    "Source": "seed_s10_flower"
+  },
+  {
+    "ItemId": "seed_s10_herb",
+    "Name": "S10 seed_herb",
+    "Type": "Seed",
+    "UseLevel": 90,
+    "Module": "Farm",
+    "Source": "map_s10_ore_02"
+  },
+  {
+    "ItemId": "seed_s10_flower",
+    "Name": "S10 seed_flower",
+    "Type": "Seed",
+    "UseLevel": 90,
+    "Module": "Farm",
+    "Source": "map_s10_crystal_06"
+  },
+  {
+    "ItemId": "itm_pill_s10_break",
+    "Name": "S10 pill_break",
+    "Type": "Pill",
+    "UseLevel": 90,
+    "Module": "Alchemy",
+    "Source": "mon_s10_boss"
+  },
+  {
+    "ItemId": "itm_enhance_s10",
+    "Name": "S10 enhance",
+    "Type": "Material",
+    "UseLevel": 90,
+    "Module": "Equipment",
+    "Source": "map_s10_ore_02"
+  },
+  {
+    "ItemId": "itm_reroll_s10",
+    "Name": "S10 reroll",
+    "Type": "Material",
+    "UseLevel": 90,
+    "Module": "Equipment",
+    "Source": "mon_s10_elite_01"
+  },
+  {
+    "ItemId": "itm_token_s10",
+    "Name": "S10 token",
+    "Type": "Material",
+    "UseLevel": 90,
+    "Module": "Dungeon",
+    "Source": "fuben_s10_01"
+  },
+  {
+    "ItemId": "itm_skillbook_s10",
+    "Name": "S10 skillbook",
+    "Type": "SkillBook",
+    "UseLevel": 90,
+    "Module": "Skill",
+    "Source": "fuben_s10_03"
+  },
+  {
+    "ItemId": "itm_blueprint_s10",
+    "Name": "S10 blueprint",
+    "Type": "Quest",
+    "UseLevel": 90,
+    "Module": "Forge",
+    "Source": "mon_s10_boss"
+  },
+  {
+    "ItemId": "itm_pet_s10_fragment",
+    "Name": "S10 pet_fragment",
+    "Type": "Material",
+    "UseLevel": 90,
+    "Module": "Pet",
+    "Source": "mon_s10_elite_02"
+  },
+  {
+    "ItemId": "itm_essence_s10_minor",
+    "Name": "S10 essence_minor",
+    "Type": "Material",
+    "UseLevel": 90,
+    "Module": "Growth",
+    "Source": "mon_s10_dungeon_01"
+  }
+]

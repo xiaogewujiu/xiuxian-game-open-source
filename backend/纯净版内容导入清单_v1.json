@@ -1,0 +1,13 @@
+﻿{
+  "Version": "pure-content-v1",
+  "GeneratedAtUtc": "2026-09-02T04:24:14.9302132Z",
+  "Tables": {
+    "EquipmentTemplates": 616,
+    "MonsterTemplates": 160,
+    "MapTemplates": 120,
+    "ItemTemplates": 224
+  },
+  "EntityDirectory": "D:\\ALL\\zijianyouxi\\XXX\\纯净版数据库实体导入_v1",
+  "SqlFile": "D:\\ALL\\zijianyouxi\\XXX\\纯净版内容导入基准_v1.sql",
+  "ExecutionPolicy": "仅人工审核后执行；项目启动不自动执行本文件。"
+}

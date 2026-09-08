@@ -1,0 +1,534 @@
+/* 修仙问道 - 样式入口文件（现代中性风格） */
+@import './variables.css';
+
+/* 全局基础字体大小 */
+html {
+  font-size: var(--font-size-base);
+}
+
+body {
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+
+/* 全局额外样式 */
+
+/* 输入框样式 - 简洁现代 */
+input, textarea {
+  background: var(--control-bg);
+  border: 1px solid var(--control-border);
+  border-radius: var(--radius-md);
+  color: var(--control-text);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-family: var(--font-primary);
+  transition: border-color 0.15s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--border-color);
+  box-shadow: 0 0 0 2px oklch(1 0 0 / 0.05);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--control-placeholder);
+}
+
+/* 选择框样式 */
+select {
+  background: var(--control-bg);
+  border: 1px solid var(--control-border);
+  border-radius: var(--radius-md);
+  color: var(--control-text);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-family: var(--font-primary);
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--border-color);
+}
+
+/* 卡片样式 - 简洁圆角 */
+.card {
+  background: var(--xiuxian-bg-panel);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  transition: box-shadow 0.15s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* 列表样式 */
+.list-item {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+  transition: background 0.15s ease;
+}
+
+.list-item:hover {
+  background: var(--bg-overlay-light);
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+/* 图标按钮 */
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background: var(--control-bg);
+  border: 1px solid var(--control-border);
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.icon-btn:hover {
+  border-color: var(--border-color);
+  color: var(--text-primary);
+  background: var(--control-bg-hover);
+}
+
+/* 状态标签 */
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: var(--font-size-base);
+}
+
+.status-tag::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.status-online {
+  background: var(--status-success-bg);
+  color: var(--status-success-text);
+}
+
+.status-online::before {
+  background: var(--status-success-text);
+}
+
+.status-offline {
+  background: oklch(1 0 0 / 0.06);
+  color: var(--text-muted);
+}
+
+.status-offline::before {
+  background: var(--text-muted);
+}
+
+/* 数值显示 */
+.stat-value {
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.stat-value.positive {
+  color: var(--status-success-text);
+}
+
+.stat-value.negative {
+  color: var(--status-danger-text);
+}
+
+/* 加载动画 */
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--bg-overlay-dark);
+  border-top-color: var(--text-secondary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* 火燃烧动画 - 用于炼丹系统 */
+@keyframes fire-burn {
+  0%, 100% {
+    transform: scaleY(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scaleY(1.2);
+    opacity: 1;
+  }
+}
+
+.fire-burn {
+  animation: fire-burn 0.5s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+/* 装备格子 */
+.equip-slot {
+  width: 64px;
+  height: 64px;
+  background: var(--bg-overlay-light);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.15s ease;
+}
+
+.equip-slot:hover {
+  border-color: var(--text-secondary);
+}
+
+.equip-slot.empty::after {
+  content: '+';
+  color: var(--text-muted);
+  font-size: 24px;
+}
+
+/* 背包格子 */
+.bag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+  gap: var(--spacing-sm);
+}
+
+.bag-item {
+  aspect-ratio: 1;
+  background: var(--bg-overlay-light);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  position: relative;
+}
+
+.bag-item:hover {
+  border-color: var(--text-secondary);
+  transform: scale(1.03);
+}
+
+.bag-item.selected {
+  border-color: var(--text-primary);
+  box-shadow: 0 0 0 2px oklch(1 0 0 / 0.1);
+}
+
+/* 战斗单位 */
+.battle-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  transition: all 0.15s ease;
+}
+
+.battle-unit.active {
+  background: var(--bg-overlay-light);
+}
+
+.battle-unit.dead {
+  opacity: 0.4;
+  filter: grayscale(100%);
+}
+
+/* ===== Toast 通知 ===== */
+
+.toast-container {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.toast-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  line-height: 1.4;
+  max-width: 420px;
+  pointer-events: auto;
+  animation: toast-slide-in 0.3s ease;
+  box-shadow: 0 4px 12px oklch(0 0 0 / 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.toast-item.toast-leaving {
+  animation: toast-fade-out 0.3s ease forwards;
+}
+
+.toast-info {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+}
+
+.toast-success {
+  background: var(--status-success-bg);
+  color: var(--status-success-text);
+  border: 1px solid var(--status-success-text);
+}
+
+.toast-warning {
+  background: var(--status-warning-bg);
+  color: var(--status-warning-text);
+  border: 1px solid var(--status-warning-text);
+}
+
+.toast-error {
+  background: var(--status-danger-bg);
+  color: var(--status-danger-text);
+  border: 1px solid var(--status-danger-text);
+}
+
+.toast-icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.toast-message {
+  flex: 1;
+  word-break: break-word;
+}
+
+.toast-close {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: inherit;
+  opacity: 0.6;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 2px;
+  line-height: 1;
+}
+
+.toast-close:hover {
+  opacity: 1;
+}
+
+@keyframes toast-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes toast-fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.95);
+  }
+}
+
+/* ==========================================
+   SaaS text RPG elements & tactile micro-interactions
+   ========================================== */
+
+/* 物理按压反馈 & hover 平滑过渡 */
+.btn, .icon-btn, .clickable, .bag-item, .list-item, .active\:translate-y-px {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:active, .icon-btn:active, .clickable:active, .bag-item:active, .active\:translate-y-px:active {
+  transform: translateY(1px);
+}
+
+/* SaaS 属性徽章 Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.badge-secondary {
+  background: var(--bg-overlay-medium);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.badge-primary {
+  background: var(--highlight-soft-bg);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+}
+
+.badge-success {
+  background: var(--status-success-bg);
+  color: var(--status-success-text);
+  border: 1px solid var(--status-success-text);
+}
+
+.badge-warning {
+  background: var(--status-warning-bg);
+  color: var(--status-warning-text);
+  border: 1px solid var(--status-warning-text);
+}
+
+.badge-danger {
+  background: var(--status-danger-bg);
+  color: var(--status-danger-text);
+  border: 1px solid var(--status-danger-text);
+}
+
+/* 金色/琥珀色阴影呼吸动画 */
+@keyframes glow-breath-gold {
+  0%, 100% {
+    box-shadow: 0 0 4px oklch(0.82 0.14 85 / 0.15), inset 0 0 0 1px oklch(0.82 0.14 85 / 0.1);
+  }
+  50% {
+    box-shadow: 0 0 12px oklch(0.82 0.14 85 / 0.45), inset 0 0 0 1px oklch(0.82 0.14 85 / 0.35);
+  }
+}
+
+.glow-breathe-gold {
+  animation: glow-breath-gold 3s ease-in-out infinite;
+}
+
+/* 极细圆角滚动条样式 */
+::-webkit-scrollbar {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 999px;
+  border: 1px solid var(--scrollbar-border-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--scrollbar-thumb-active);
+}
+
+/* ==========================================
+   修仙国风特效与动画
+   ========================================== */
+
+/* 品质装备发光动效 */
+@keyframes epic-shimmer {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(147, 51, 234, 0.15), inset 0 0 4px rgba(147, 51, 234, 0.05);
+    border-color: var(--quality-epic);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(147, 51, 234, 0.45), inset 0 0 8px rgba(147, 51, 234, 0.2);
+    border-color: oklch(0.65 0.22 300);
+  }
+}
+
+@keyframes legendary-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(217, 119, 6, 0.2), inset 0 0 6px rgba(217, 119, 6, 0.08);
+    border-color: var(--quality-legendary);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.55), inset 0 0 10px rgba(245, 158, 11, 0.25);
+    border-color: var(--gold-light);
+  }
+}
+
+@keyframes mythic-pulsate {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(220, 38, 38, 0.25), inset 0 0 8px rgba(220, 38, 38, 0.1);
+    border-color: var(--quality-mythic);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(239, 68, 68, 0.65), inset 0 0 12px rgba(239, 68, 68, 0.35);
+    border-color: #f87171;
+  }
+}
+
+/* 突破按钮金光动效 */
+@keyframes breakthrough-pulse {
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 8px var(--gold-primary), 0 2px 4px rgba(80, 95, 83, 0.1);
+  }
+  100% {
+    transform: translateY(-1px) scale(1.03);
+    box-shadow: 0 0 20px var(--gold-light), 0 4px 8px rgba(80, 95, 83, 0.18);
+  }
+}
+
+/* 状态条流光动画 */
+@keyframes bar-shine {
+  0% {
+    background-position: 150% 0;
+  }
+  100% {
+    background-position: -50% 0;
+  }
+}
+
+/* 头像八卦命轮旋转动画 */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+

@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <!--
+      中文注释：当前机器只装了 .NET 9 SDK，而项目目标框架仍然是 net8.0。
+      中文注释：在这套环境里，dotnet restore 默认开启的 Static Graph Restore 会异常失败，表现为“生成失败，但没有明确编译错误”。
+      中文注释：这里统一关闭该模式，保证开发者直接执行 dotnet restore / build / run 时，都能稳定走到真实编译与运行阶段。
+    -->
+    <RestoreUseStaticGraphEvaluation>false</RestoreUseStaticGraphEvaluation>
+  </PropertyGroup>
+</Project>
