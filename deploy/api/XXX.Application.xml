@@ -1969,6 +1969,21 @@
             属性区间。
             </summary>
         </member>
+        <member name="T:XXX.Application.DTOs.AdminEquipmentDecomposeRuleDto">
+            <summary>
+            装备分解产出规则 DTO。
+            </summary>
+        </member>
+        <member name="T:XXX.Application.DTOs.AdminEquipmentEnhanceRuleDto">
+            <summary>
+            装备强化等级区间规则 DTO。
+            </summary>
+        </member>
+        <member name="T:XXX.Application.DTOs.AdminEquipmentRerollCostRuleDto">
+            <summary>
+            装备洗炼消耗等级区间规则 DTO。
+            </summary>
+        </member>
         <member name="T:XXX.Application.DTOs.AdminEquipmentRerollSystemConfigDto">
             <summary>
             装备洗练系统配置 DTO。
@@ -3076,11 +3091,6 @@
         <member name="P:XXX.Application.DTOs.AdminItemChestRewardDto.Weight">
             <summary>
             抽取权重。
-            </summary>
-        </member>
-        <member name="P:XXX.Application.DTOs.AdminItemChestRewardDto.IsBound">
-            <summary>
-            是否绑定。
             </summary>
         </member>
         <member name="P:XXX.Application.DTOs.AdminItemChestRewardDto.Description">
@@ -4545,11 +4555,6 @@
         <member name="P:XXX.Application.DTOs.AdminGrantItemRequestDto.Quantity">
             <summary>
             发放数量。
-            </summary>
-        </member>
-        <member name="P:XXX.Application.DTOs.AdminGrantItemRequestDto.IsBound">
-            <summary>
-            是否绑定。
             </summary>
         </member>
         <member name="P:XXX.Application.DTOs.AdminGrantItemRequestDto.Reason">
@@ -8245,9 +8250,9 @@
             是否已装备
             </summary>
         </member>
-        <member name="P:XXX.Application.DTOs.EquipmentDto.IsBound">
+        <member name="P:XXX.Application.DTOs.EquipmentDto.IsLocked">
             <summary>
-            是否绑定
+            是否锁定
             </summary>
         </member>
         <member name="P:XXX.Application.DTOs.EquipmentDto.BasePhysicalAttack">
@@ -8491,16 +8496,6 @@
             装备实例ID
             </summary>
         </member>
-        <member name="T:XXX.Application.DTOs.RerollEquipmentRequestDto">
-            <summary>
-            洗练装备请求 DTO
-            </summary>
-        </member>
-        <member name="P:XXX.Application.DTOs.RerollEquipmentRequestDto.EquipmentId">
-            <summary>
-            装备实例ID
-            </summary>
-        </member>
         <member name="T:XXX.Application.DTOs.BindEquipmentResultDto">
             <summary>
             绑定装备结果 DTO
@@ -8676,6 +8671,16 @@
             洗练石消耗。
             </summary>
         </member>
+        <member name="P:XXX.Application.DTOs.EquipmentRerollCostDto.MaterialItemId">
+            <summary>
+            当前规则使用的材料道具 ID。
+            </summary>
+        </member>
+        <member name="P:XXX.Application.DTOs.EquipmentRerollCostDto.MaterialName">
+            <summary>
+            当前规则使用的材料名称。
+            </summary>
+        </member>
         <member name="P:XXX.Application.DTOs.EquipmentRerollCostDto.LockedCount">
             <summary>
             锁定词条数。
@@ -8719,6 +8724,11 @@
         <member name="T:XXX.Application.DTOs.BatchSellEquipmentRequestDto">
             <summary>
             批量出售装备请求。
+            </summary>
+        </member>
+        <member name="T:XXX.Application.DTOs.DecomposeEquipmentRequestDto">
+            <summary>
+            装备分解请求。
             </summary>
         </member>
         <member name="T:XXX.Application.DTOs.GiftFavorabilityRequest">
@@ -9704,9 +9714,9 @@
             物品数量
             </summary>
         </member>
-        <member name="P:XXX.Application.DTOs.InventoryItemDto.IsBound">
+        <member name="P:XXX.Application.DTOs.InventoryItemDto.IsLocked">
             <summary>
-            是否绑定
+            是否锁定
             </summary>
         </member>
         <member name="P:XXX.Application.DTOs.InventoryItemDto.AcquiredTime">
@@ -9732,11 +9742,6 @@
         <member name="P:XXX.Application.DTOs.AddItemRequestDto.Quantity">
             <summary>
             物品数量
-            </summary>
-        </member>
-        <member name="P:XXX.Application.DTOs.AddItemRequestDto.IsBound">
-            <summary>
-            是否绑定
             </summary>
         </member>
         <member name="P:XXX.Application.DTOs.AddItemRequestDto.Source">
@@ -11738,12 +11743,6 @@
             只有道具奖励会用到，其他奖励类型保持为空。
             </summary>
         </member>
-        <member name="P:XXX.Application.DTOs.RewardItemDto.IsBound">
-            <summary>
-            是否绑定。
-            当前主要用于绑定货币、绑定道具等特殊来源奖励。
-            </summary>
-        </member>
         <member name="P:XXX.Application.DTOs.RewardItemDto.Description">
             <summary>
             额外说明。
@@ -11774,11 +11773,6 @@
             <summary>
             道具模板 ID。
             只有 Type=item 时必填。
-            </summary>
-        </member>
-        <member name="P:XXX.Application.DTOs.RewardGrantItemDto.IsBound">
-            <summary>
-            是否按绑定形式发放。
             </summary>
         </member>
         <member name="P:XXX.Application.DTOs.RewardGrantItemDto.Description">
@@ -13257,12 +13251,6 @@
             <summary>
             是否已售罄。
             这里把不限库存视为未售罄。
-            </summary>
-        </member>
-        <member name="P:XXX.Application.DTOs.ShopItemDto.IsBound">
-            <summary>
-            购买后是否绑定。
-            当前最小可玩闭环统一返回 false，后续若有绑定商品可继续扩展。
             </summary>
         </member>
         <member name="P:XXX.Application.DTOs.ShopItemDto.RequiredLevel">
@@ -16946,6 +16934,11 @@
             出售后会自动增加玩家金币
             </remarks>
         </member>
+        <member name="M:XXX.Application.Interfaces.IEquipmentService.DecomposeEquipmentsAsync(System.String,XXX.Application.DTOs.DecomposeEquipmentRequestDto)">
+            <summary>
+            分解一件或多件未穿戴、未锁定装备，并按品质发放配置产出。
+            </summary>
+        </member>
         <member name="M:XXX.Application.Interfaces.IEquipmentService.GetEnhanceableEquipmentsAsync(System.String)">
             <summary>
             获取可强化的装备列表
@@ -16992,14 +16985,6 @@
             <param name="playerId">玩家唯一标识符</param>
             <param name="equipmentId">装备实例ID</param>
             <returns>捐献结果</returns>
-        </member>
-        <member name="M:XXX.Application.Interfaces.IEquipmentService.RerollEquipmentAsync(System.String,XXX.Application.DTOs.RerollEquipmentRequestDto)">
-            <summary>
-            洗练装备。
-            </summary>
-            <param name="playerId">玩家唯一标识符</param>
-            <param name="request">洗练请求</param>
-            <returns>洗练结果</returns>
         </member>
         <member name="M:XXX.Application.Interfaces.IEquipmentService.GetEquipmentRerollPreviewAsync(System.String,System.String)">
             <summary>
@@ -20689,7 +20674,7 @@
             掉落数量。
             </summary>
         </member>
-        <member name="P:XXX.Application.Services.ItemDropGroup.IsBound">
+        <member name="P:XXX.Application.Services.ItemDropGroup.IsLocked">
             <summary>
             是否绑定（战斗掉落当前统一为非绑定）。
             </summary>
@@ -20890,7 +20875,7 @@
             </summary>
             <param name="playerId">所属玩家编号。</param>
             <param name="template">装备模板。</param>
-            <param name="isBound">是否绑定。</param>
+            <param name="isLocked">是否锁定。</param>
             <returns>带随机基础数值的装备实例。</returns>
         </member>
         <member name="M:XXX.Application.Services.EquipmentBalanceHelper.CreateEntity(System.String,XXX.Entity.EquipmentInstance,System.Boolean)">
@@ -21007,6 +20992,11 @@
             在一个请求、一个事务内批量出售装备，避免前端逐件调用出售接口。
             </summary>
         </member>
+        <member name="M:XXX.Application.Services.EquipmentService.DecomposeEquipmentsAsync(System.String,XXX.Application.DTOs.DecomposeEquipmentRequestDto)">
+            <summary>
+            在单个事务内分解装备并按品质规则发放材料。
+            </summary>
+        </member>
         <member name="M:XXX.Application.Services.EquipmentService.AutoSellUnqualifiedEquipmentAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.DateTime},System.String,System.Boolean)">
             <summary>
             按玩家自动出售设置清理不符合条件的未穿戴、未绑定装备。
@@ -21043,14 +21033,6 @@
             <param name="equipmentId">装备实例编号。</param>
             <returns>捐献结果与获得的贡献值。</returns>
         </member>
-        <member name="M:XXX.Application.Services.EquipmentService.RerollEquipmentAsync(System.String,XXX.Application.DTOs.RerollEquipmentRequestDto)">
-            <summary>
-            洗练装备附加属性。
-            </summary>
-            <param name="playerId">玩家编号。</param>
-            <param name="request">洗练请求。</param>
-            <returns>洗练结果与更新后的装备信息。</returns>
-        </member>
         <member name="M:XXX.Application.Services.EquipmentService.GetRequiredLevel(XXX.Entity.EquipmentInstanceEntity)">
             <summary>
             解析装备需求等级。
@@ -21059,14 +21041,6 @@
             优先读装备模板里的真实等级；如果模板缺失，则回退到旧逻辑使用品质估算，
             这样既兼容新数据，也能容忍开发期残留的旧装备记录。
             </remarks>
-        </member>
-        <member name="M:XXX.Application.Services.EquipmentService.DeductRerollMaterialInTransactionAsync(System.String,System.Int32)">
-            <summary>
-            中文注释：
-            洗练当前统一消耗 `item_003`。
-            这是开发阶段的折中方案：先复用已经真实掉落的狼牙，把洗练整条链路跑通，
-            避免前后端为了“洗练石”再额外新增一整套掉落、商店和迁移数据。
-            </summary>
         </member>
         <member name="T:XXX.Application.Services.FavorabilityService">
             <summary>
@@ -21829,40 +21803,6 @@
             <summary>
             同时叠加心法和图鉴加成到 DTO。
             固定值先叠加，再从叠加前的基值统一计算百分比加成，避免百分比滚雪球。
-            </summary>
-        </member>
-        <member name="T:XXX.Application.Services.PlayerRewardService">
-            <summary>
-            中文注释：
-            通用玩家奖励发放服务。
-            这层只负责把奖励真正落到人物表和背包表里，
-            不负责决定“因为哪件事发奖”，从而让签到、兑换码、后续活动都能复用同一套落库逻辑。
-            </summary>
-        </member>
-        <member name="M:XXX.Application.Services.PlayerRewardService.#ctor(XXX.Infrastructure.Data.DbContext,System.IServiceProvider,XXX.Infrastructure.Repositories.IRepository{XXX.Entity.UserEntity},Microsoft.Extensions.Logging.ILogger{XXX.Application.Services.PlayerRewardService})">
-            <summary>
-            初始化玩家奖励服务。
-            </summary>
-            <param name="dbContext">数据库上下文。</param>
-            <param name="serviceProvider">服务提供器，用于按需解析奖励发放依赖。</param>
-            <param name="userRepository">玩家仓储。</param>
-            <param name="logger">日志记录器。</param>
-        </member>
-        <member name="M:XXX.Application.Services.PlayerRewardService.GrantRewardsAsync(System.String,System.Collections.Generic.IEnumerable{XXX.Application.DTOs.RewardGrantItemDto},System.String)">
-            <summary>
-            向玩家批量发放奖励。
-            </summary>
-            <param name="playerId">玩家编号。</param>
-            <param name="rewards">奖励定义集合。</param>
-            <param name="source">奖励来源标识。</param>
-            <returns>实际到账的奖励明细列表。</returns>
-        </member>
-        <member name="M:XXX.Application.Services.PlayerRewardService.AddInventoryItemAsync(System.String,System.String,System.Int32,System.Boolean)">
-            <summary>
-            中文注释：
-            这里直接写背包表，而不是再调一层更高的背包业务接口，
-            原因是签到和兑换码需要和“领取状态写库”共用同一笔事务。
-            只有这样，才能避免出现“提示领取成功，但背包没到账”或者“背包到账了，但状态没记录”的半成功脏数据。
             </summary>
         </member>
         <member name="T:XXX.Application.Services.PlayerService">

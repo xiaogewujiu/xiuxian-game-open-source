@@ -1042,6 +1042,11 @@
             批量出售装备。
             </summary>
         </member>
+        <member name="M:XXX.WebApi.Controllers.EquipmentController.Decompose(XXX.Application.DTOs.DecomposeEquipmentRequestDto)">
+            <summary>
+            分解一件或多件未穿戴、未锁定装备。
+            </summary>
+        </member>
         <member name="M:XXX.WebApi.Controllers.EquipmentController.GetEnhanceable">
             <summary>
             获取可强化装备列表。
@@ -1065,11 +1070,6 @@
         <member name="M:XXX.WebApi.Controllers.EquipmentController.Donate(System.String)">
             <summary>
             捐献装备。
-            </summary>
-        </member>
-        <member name="M:XXX.WebApi.Controllers.EquipmentController.Reroll(XXX.Application.DTOs.RerollEquipmentRequestDto)">
-            <summary>
-            洗练装备。
             </summary>
         </member>
         <member name="M:XXX.WebApi.Controllers.EquipmentController.GetRerollPreview(System.String)">

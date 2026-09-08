@@ -40,8 +40,7 @@ namespace XXX.WebApi.Services
             _httpClientFactory = httpClientFactory;
             _assetStorage = assetStorage;
             _logger = logger;
-            _apiKey = configuration["AiIcon:ApiKey"]
-                ?? "sk-HFVBMYa1wTKdMaCjH5HVDllJHRBJ845YaqHfcSOlpZcDYHJO";
+            _apiKey = configuration["AiIcon:ApiKey"] ?? string.Empty;
         }
 
         /// <summary>
